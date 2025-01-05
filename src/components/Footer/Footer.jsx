@@ -18,26 +18,27 @@ const Footer = () => {
                     </Link>
                </div>
                <div className='flex gap-6 mt-6 justify-center items-center'>
-                    <Link to={'/'}> <FaFacebook className='text-xl hover:text-[#edea42]' /></Link>
-                    <Link to={'/'}>  <FaLinkedinIn className='text-xl hover:text-[#edea42]' /></Link>
-                    <Link to={'/'}> <FaInstagram className='text-xl hover:text-[#edea42]' /></Link>
-                    <Link to={'/'}> <FaYoutube className='text-xl hover:text-[#edea42]' /></Link>
+                    <Link to={'/'}> <FaFacebook className='text-xl hover:text-primaryColor' /></Link>
+                    <Link to={'/'}>  <FaLinkedinIn className='text-xl hover:text-primaryColor' /></Link>
+                    <Link to={'/'}> <FaInstagram className='text-xl hover:text-primaryColor' /></Link>
+                    <Link to={'/'}> <FaYoutube className='text-xl hover:text-primaryColor' /></Link>
                </div>
 
                <div className='text-center flex justify-center mt-4'>
 
-                    <a href={'https://maps.app.goo.gl/bkdn3ft5o6oHbFXd7'} target="_blank" className='text-base font-medium w-96  '>
+                    <a href={'https://maps.app.goo.gl/bkdn3ft5o6oHbFXd7'} target="_blank" className='text-base font-medium w-96  hover:text-primaryColor'>
                          Softtech Solution, Nikunja 2,House#9 Rd No.8, Dhaka 1229, Bangladesh
                     </a>
                </div>
                <div>
                     <ul className='md:flex lg:flex flex-row text-center justify-center lg:gap-20 md:gap-10  mt-8'>
-                         <Link to={'/'}><li className='text-sm font-medium hover:text-[#edea42] mb-1'>HOME</li></Link>
-                         <Link to={'/about'}><li className='text-sm font-medium hover:text-[#edea42] mb-1'>ABOUT</li></Link>
-                         <Link to={'/property'}><li className='text-sm font-medium hover:text-[#edea42] mb-1'>PROPERTY</li></Link>
-                         <Link to={'/blog'}><li className='text-sm font-medium hover:text-[#edea42] mb-1'>BLOG</li></Link>
-                         <Link to={'/career'}><li className='text-sm font-medium hover:text-[#edea42] mb-1'>CAREER</li></Link>
-                         <Link to={'/contactUs'}><li className='text-sm font-medium hover:text-[#edea42] mb-1'>CONTACT US</li></Link>
+                         <Link to={'/'}><li className='text-sm font-medium hover:text-primaryColor mb-1 '>HOME</li></Link>
+
+                         <Link to={'/about'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>ABOUT</li></Link>  <hr />
+                         <Link to={'/property'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>PROPERTY</li></Link>  <hr />
+                         <Link to={'/blog'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>BLOG</li></Link>  <hr />
+                         <Link to={'/career'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>CAREER</li></Link>  <hr />
+                         <Link to={'/contactUs'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>CONTACT US</li></Link>
                     </ul>
                     <hr className='mt-4' />
                </div>

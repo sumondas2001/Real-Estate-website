@@ -11,6 +11,9 @@ export default {
         Montserrat: ' "Montserrat", serif'
       }
     },
+    colors: {
+      primaryColor: 'var(--Primary)'
+    }
   },
   plugins: [
     require('daisyui'),

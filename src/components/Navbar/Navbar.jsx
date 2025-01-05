@@ -30,8 +30,8 @@ const Navbar = () => {
                     <NavLink
                          className={({ isActive }) =>
                               isActive
-                                   ? "focus:bg-transparent focus:text-[#edea42] hover:underline hover:decoration-[#edea42] text-[#edea42]"
-                                   : "hover:underline decoration-[#edea42] hover:text-[#edea42] "
+                                   ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                                   : "hover:underline decoration-primaryColor hover:text-primaryColor "
                          }
                          to={'/'}
                     >
@@ -42,8 +42,8 @@ const Navbar = () => {
                <li>
                     <NavLink className={({ isActive }) =>
                          isActive
-                              ? "focus:bg-transparent focus:text-[#edea42] hover:underline hover:decoration-[#edea42] text-[#edea42]"
-                              : "hover:underline decoration-[#edea42] hover:text-[#edea42] "
+                              ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                              : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
                          to={'/about'}
                     >ABOUT
@@ -52,8 +52,8 @@ const Navbar = () => {
                <li>
                     <NavLink className={({ isActive }) =>
                          isActive
-                              ? "focus:bg-transparent focus:text-[#edea42] hover:underline hover:decoration-[#edea42] text-[#edea42]"
-                              : "hover:underline decoration-[#edea42] hover:text-[#edea42] "
+                              ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                              : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
                          to={'/property'}
                     >PROPERTY
@@ -62,8 +62,8 @@ const Navbar = () => {
                <li>
                     <NavLink className={({ isActive }) =>
                          isActive
-                              ? "focus:bg-transparent focus:text-[#edea42] hover:underline hover:decoration-[#edea42] text-[#edea42]"
-                              : "hover:underline decoration-[#edea42] hover:text-[#edea42] "
+                              ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                              : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
                          to={'/blog'}
                     >BLOG
@@ -72,8 +72,8 @@ const Navbar = () => {
                <li>
                     <NavLink className={({ isActive }) =>
                          isActive
-                              ? "focus:bg-transparent focus:text-[#edea42] hover:underline hover:decoration-[#edea42] text-[#edea42]"
-                              : "hover:underline decoration-[#edea42] hover:text-[#edea42] "
+                              ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                              : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
                          to={'/career'}
                     >CAREER
@@ -82,8 +82,8 @@ const Navbar = () => {
                <li>
                     <NavLink className={({ isActive }) =>
                          isActive
-                              ? "focus:bg-transparent focus:text-[#edea42] hover:underline hover:decoration-[#edea42] text-[#edea42]"
-                              : "hover:underline decoration-[#edea42] hover:text-[#edea42] "
+                              ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                              : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
                          to={'/contactUs'}
                     >CONTACT US
@@ -95,7 +95,7 @@ const Navbar = () => {
      );
 
      return (
-          <div className=" fixed text-white left-0 top-0 right-0  mx-auto bg-opacity-30 z-50 bg-slate-800 ">
+          <div className=" fixed text-white left-0 top-0 right-0  mx-auto bg-opacity-30 z-50  bg-[#1e293b] ">
                <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] py-1 navbar px-0 mx-auto">
                     <div className="navbar-start md:hidden w-2/5 md:w-10 lg:w-0">
                          <div className="dropdown">
