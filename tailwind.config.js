@@ -12,7 +12,9 @@ export default {
       }
     },
     colors: {
-      primaryColor: 'var(--Primary)'
+      primaryColor: 'var(--Primary)',
+      whiteColor: 'var(--#FFFFFF)',
+
     }
   },
   plugins: [
