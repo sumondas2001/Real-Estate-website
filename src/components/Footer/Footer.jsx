@@ -4,12 +4,8 @@ import { FaFacebook, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa
 
 const Footer = () => {
      return (
-          <div style={{
-               backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://i.ibb.co/bzpwwmp/clay-banks-yb-LSV7s-F7j8-unsplash.jpg")`,
-               backgroundSize: "cover",
-               backgroundPosition: "center",
-          }}
-               className='  object-cover py-10 mt-10 text-white '>
+          <div
+               className='  object-cover py-10 mt-10 text-white bg-slate-900'>
 
 
                <div className='flex justify-center items-center'>
@@ -34,10 +30,10 @@ const Footer = () => {
                     <ul className='md:flex lg:flex flex-row text-center justify-center lg:gap-20 md:gap-10  mt-8'>
                          <Link to={'/'}><li className='text-sm font-medium hover:text-primaryColor mb-1 '>HOME</li></Link>
 
-                         <Link to={'/about'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>ABOUT</li></Link>  <hr />
-                         <Link to={'/property'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>PROPERTY</li></Link>  <hr />
-                         <Link to={'/blog'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>BLOG</li></Link>  <hr />
-                         <Link to={'/career'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>CAREER</li></Link>  <hr />
+                         <Link to={'/about'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>ABOUT</li></Link>
+                         <Link to={'/property'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>PROPERTY</li></Link>
+                         <Link to={'/blog'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>BLOG</li></Link>
+                         <Link to={'/career'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>CAREER</li></Link>
                          <Link to={'/contactUs'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>CONTACT US</li></Link>
                     </ul>
                     <hr className='mt-4' />
