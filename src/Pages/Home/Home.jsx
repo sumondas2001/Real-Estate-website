@@ -15,8 +15,8 @@ const Home = () => {
 
                     <ArchitecturalElementSection1 />
                     <ArchitecturalElementSection2 />
-                    {/* <Video></Video> */}
                </div>
+               <Video></Video>
           </div>
      );
 };
