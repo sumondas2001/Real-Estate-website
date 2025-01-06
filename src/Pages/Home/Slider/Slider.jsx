@@ -67,7 +67,7 @@ const Slider = () => {
                                              className="absolute inset-0 flex items-center justify-center text-primaryColor">
                                              <h1
 
-                                                  className="text-7xl text-white font-medium opacity-70">{slider.title}</h1>
+                                                  className="lg:text-7xl md:text-5xl text-3xl  font-medium opacity-70">{slider?.title}</h1>
                                         </div>
                                    </div>
                               </SwiperSlide>

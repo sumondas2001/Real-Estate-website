@@ -8,14 +8,15 @@ export default {
     extend: {
       fontFamily: {
 
-        Montserrat: ' "Montserrat", serif'
-      }
-    },
-    colors: {
-      primaryColor: 'var(--Primary)',
-      whiteColor: 'var(--#FFFFFF)',
+        Cinzel: '  "Cinzel", serif'
+      },
+      colors: {
+        primaryColor: 'var(--Primary)',
+        whiteColor: 'var(--#FFFFFF)',
 
+      }
     }
+
   },
   plugins: [
     require('daisyui'),

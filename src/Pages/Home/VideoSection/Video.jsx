@@ -9,7 +9,7 @@ const Video = () => {
                     src="https://www.youtube.com/embed/kqq0JTjrXlM?si=PNhStg3GdGhiofZJ&controls=1&mute=1"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                    allowFullScreen
+
                ></iframe>
           </div>
 
