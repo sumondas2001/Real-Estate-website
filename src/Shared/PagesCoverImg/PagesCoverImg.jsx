@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const PagesCoverImg = ({ info }) => {
      const { CoverImg } = info;
      return (
-          <div className="relative mb-20">
+          <div className="relative ">
                {/* Gradient and image container */}
                <div className="relative ">
                     <img className=" w-full lg:h-[500px] md:h-[390px] h-[350px] object-cover" src={CoverImg} alt="Cover Img" />

@@ -1,0 +1,32 @@
+[
+     {
+          "id": 1,
+          "title": "Years of Experience",
+          "number": "30"
+     },
+     {
+          "id": 2,
+          "title": "Projects delivered on time",
+          "number": "150"
+     },
+     {
+          "id": 3,
+          "title": "Units built with care",
+          "number": "4920"
+     },
+     {
+          "id": 4,
+          "title": "Site visits to ensure quality",
+          "number": "142000"
+     },
+     {
+          "id": 5,
+          "title": "Residents living happily",
+          "number": "20000"
+     },
+     {
+          "id": 6,
+          "title": "Square feet of real estate developed",
+          "number": "8000000"
+     }
+]

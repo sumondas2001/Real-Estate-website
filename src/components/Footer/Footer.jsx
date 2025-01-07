@@ -23,7 +23,7 @@ const Footer = () => {
                <div className='text-center flex justify-center mt-4'>
 
                     <a href={'https://maps.app.goo.gl/bkdn3ft5o6oHbFXd7'} target="_blank" className='text-base font-medium w-96  hover:text-primaryColor'>
-                         Softtech Solution, Nikunja 2,House#9 Rd No.8, Dhaka 1229, Bangladesh
+                         Softtech Solution, Nikunja 2 ,House #9 Rd No.8, Dhaka 1229, Bangladesh
                     </a>
                </div>
                <div>

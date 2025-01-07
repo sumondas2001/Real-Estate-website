@@ -7,12 +7,13 @@ import './slider.css';
 // import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import toast from 'react-hot-toast';
+import axios from 'axios';
 
 
 const Slider = () => {
      const [slidersData, setSlidersData] = useState([]);
+
 
      useEffect(() => {
           axios.get('/slider.json')

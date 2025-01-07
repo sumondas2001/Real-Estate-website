@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 const PagesTitle = ({ title }) => {
-     console.log(title);
+     // console.log(title);
      return (
           <Helmet>
                <title>{title} - Real State</title>
