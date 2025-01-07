@@ -12,7 +12,8 @@ export default {
       },
       colors: {
         primaryColor: 'var(--Primary)',
-        whiteColor: 'var(--#FFFFFF)',
+
+        secondaryColor: 'var(--secondary)',
 
       }
     }
