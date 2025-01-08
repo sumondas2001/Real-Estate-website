@@ -51,7 +51,7 @@ const OurMissionAndVision = () => {
                               alt=""
                          />
                     </div>
-                    <div className="flex flex-col md:mb-14 lg:mb-0 mb-10 lg:justify-end  lg:text-end mt-20 lg:w-2/5 lg:space-y-10 space-y-8 text-white  ">
+                    <div className="flex flex-col md:mb-14 lg:mb-0 mb-10 lg:justify-end  mt-20 lg:w-2/5 lg:space-y-10 space-y-8 text-white  ">
                          <h1 className="lg:text-4xl md:text-3xl text-3xl font-medium">{ourVision?.title}</h1>
                          <p className="lg:text-lg text-base font-normal lg:w-96">{ourVision?.description}</p>
                     </div>
