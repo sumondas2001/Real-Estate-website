@@ -2,6 +2,7 @@ import PagesCoverImg from "../../Shared/PagesCoverImg/PagesCoverImg";
 import PagesTitle from "../../Shared/PagesTitle/PagesTitle";
 import DepartmentsSection from "./DepartmentsSection/DepartmentsSection";
 import EmpoweringGrowth from "./EmpoweringGrowth/EmpoweringGrowth";
+import JobFrom from "./JobFrom/JobFrom";
 
 const Career = () => {
      const CoverImg = 'https://sheltech.com.bd/CMS/admin/uploads/page/career/1707390346Jc754.jpg';
@@ -24,9 +25,11 @@ const Career = () => {
                     <PagesCoverImg info={info} ></PagesCoverImg>
                </div>
                <EmpoweringGrowth></EmpoweringGrowth>
+
                <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px]  mx-auto" >
-                    <DepartmentsSection></DepartmentsSection>
+                    <JobFrom></JobFrom>
                </div>
+               <DepartmentsSection></DepartmentsSection>
           </div>
      );
 };
