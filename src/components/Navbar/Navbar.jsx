@@ -72,7 +72,7 @@ const Navbar = () => {
                <li>
                     <NavLink className={({ isActive }) =>
                          isActive
-                              ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
+                              ? "focus:bg-transparent focus:text-primaryColor  hover:underline hover:decoration-primaryColor text-primaryColor"
                               : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
                          to={'/career'}

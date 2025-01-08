@@ -24,7 +24,7 @@ const About = () => {
                     <PagesCoverImg info={info} ></PagesCoverImg>
                     <AboutUs />
                     <AchievementsCounts />
-                    {/* <OurMissionAndVision /> */}
+                    <OurMissionAndVision />
                     <GallerySection />
                </div>
           </div>

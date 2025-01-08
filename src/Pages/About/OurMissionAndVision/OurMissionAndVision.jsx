@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const OurMissionAndVision = () => {
      const [ourMission, setOurMission] = useState([]);
-     console.log(ourMission.id);
+     // console.log(ourMission.id);
      const [ourVision, setOurVision] = useState([]);
 
      useEffect(() => {
@@ -31,29 +31,29 @@ const OurMissionAndVision = () => {
 
      }, [])
      return (
-          <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto relative ">
-               <div className="flex text-center relative">
+          <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto relative lg:mb-32 md:mb-28 mb-20">
+               <div className="flex lg:flex-row flex-col-reverse  lg:gap-32 lg:text-center relative">
                     {/* Our Mission Section */}
-                    <div className="w-1/2">
-                         <img className="relative z-10" src={ourMission?.img} alt="" />
+                    <div className="lg:w-3/5  lg:relative lg:z-10">
+                         <img className="lg:h-96 md:h-80 h-72  w-full object-cover" src={ourMission?.img} alt="" />
                     </div>
-                    <div className="w-1/2 text-white space-y-10">
-                         <h1 className="text-4xl font-medium">{ourMission?.title}</h1>
-                         <p className="text-lg font-normal w-96 mx-auto">{ourMission?.description}</p>
+                    <div className="lg:w-2/5 text-white lg:space-y-10 space-y-8 md:mb-14 lg:mb-0 mb-10">
+                         <h1 className="lg:text-4xl md:text-3xl text-3xl font-medium ">{ourMission?.title}</h1>
+                         <p className="lg:text-lg text-base font-normal lg:w-96 lg:mx-auto">{ourMission?.description}</p>
                     </div>
                </div>
-               <div className="flex flex-row-reverse relative">
+               <div className="flex lg:gap-32 lg:flex-row-reverse flex-col-reverse">
                     {/* Our Vision Section */}
-                    <div className="w-1/2 bottom-4 relative">
+                    <div className="lg:w-3/5 lg:bottom-4 lg:relative">
                          <img
-                              className="absolute -top-32 right-32 z-20"
+                              className=" lg:absolute lg:-top-24 lg:h-96 md:h-80 object-cover h-72 w-full lg:right-14 lg:z-50"
                               src={ourVision?.img}
                               alt=""
                          />
                     </div>
-                    <div className="flex flex-col justify-end w-1/2 space-y-10 text-white relative z-10">
-                         <h1 className="text-4xl font-medium">{ourVision?.title}</h1>
-                         <p className="text-lg font-normal w-96">{ourVision?.description}</p>
+                    <div className="flex flex-col md:mb-14 lg:mb-0 mb-10 lg:justify-end  lg:text-end mt-20 lg:w-2/5 lg:space-y-10 space-y-8 text-white  ">
+                         <h1 className="lg:text-4xl md:text-3xl text-3xl font-medium">{ourVision?.title}</h1>
+                         <p className="lg:text-lg text-base font-normal lg:w-96">{ourVision?.description}</p>
                     </div>
                </div>
           </div>
