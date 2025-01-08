@@ -6,6 +6,8 @@ import Blog from "../Pages/Blog/Blog";
 import Career from "../Pages/Career/Career";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import Home from "../Pages/Home/Home";
+import CustomerFrom from "../Pages/ContactUs/CustomerFrom/CustomerFrom";
+import LandOwnerFrom from "../Pages/ContactUs/LandOwnerFrom/LandOwnerFrom";
 
 
 const router = createBrowserRouter([
@@ -15,7 +17,8 @@ const router = createBrowserRouter([
           children: [
                {
                     path: '/',
-                    element: <Home></Home>
+                    element: <Home></Home>,
+
                },
                {
                     path: '/about',
@@ -35,8 +38,19 @@ const router = createBrowserRouter([
                },
                {
                     path: '/contactUs',
-                    element: <ContactUs></ContactUs>
-               }
+                    element: <ContactUs></ContactUs>,
+                    children: [
+                         {
+                              path: 'customerFrom',
+                              element: <CustomerFrom />
+                         },
+                         {
+                              path: 'landOwnerFrom',
+                              element: <LandOwnerFrom />
+                         }
+                    ]
+               },
+
           ]
      }
 ]);
