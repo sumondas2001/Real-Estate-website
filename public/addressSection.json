@@ -4,20 +4,23 @@
           "office": "Corporate Office",
           "number": "5555550",
           "email": "test@gmail.com",
-          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212"
+          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212",
+          "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7299.263549080854!2d90.41202048742537!3d23.831689628556386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c65e78f46ee1%3A0x3e009fd37c89634f!2sNikunja%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1736406055148!5m2!1sen!2sbd"
      },
      {
           "id": 2,
           "office": "Corporate Annex Office",
           "number": "120045",
           "email": "test@gmail.com",
-          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212"
+          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212",
+          "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7299.263549080854!2d90.41202048742537!3d23.831689628556386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c65e78f46ee1%3A0x3e009fd37c89634f!2sNikunja%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1736406055148!5m2!1sen!2sbd"
      },
      {
           "id": 3,
           "office": "Corporate  Office",
           "number": "999998",
           "email": "test@gmail.com",
-          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212"
+          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212",
+          "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7299.263549080854!2d90.41202048742537!3d23.831689628556386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c65e78f46ee1%3A0x3e009fd37c89634f!2sNikunja%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1736406055148!5m2!1sen!2sbd"
      }
 ]
