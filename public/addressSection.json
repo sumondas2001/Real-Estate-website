@@ -1,0 +1,23 @@
+[
+     {
+          "id": 1,
+          "office": "Corporate Office",
+          "number": "5555550",
+          "email": "test@gmail.com",
+          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212"
+     },
+     {
+          "id": 2,
+          "office": "Corporate Annex Office",
+          "number": "120045",
+          "email": "test@gmail.com",
+          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212"
+     },
+     {
+          "id": 3,
+          "office": "Corporate  Office",
+          "number": "999998",
+          "email": "test@gmail.com",
+          "location": "House # 3/A, Road # 90, Gulshan-02, Dhaka-1212"
+     }
+]

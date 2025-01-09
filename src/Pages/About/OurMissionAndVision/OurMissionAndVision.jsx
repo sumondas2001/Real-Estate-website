@@ -31,7 +31,7 @@ const OurMissionAndVision = () => {
 
      }, [])
      return (
-          <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto relative lg:mb-32 md:mb-28 mb-20">
+          <div className="lg:max-w-[1200px] z-10 md:max-w-[700px] max-w-[360px] mx-auto relative lg:mb-32 md:mb-28 mb-20">
                <div className="flex lg:flex-row flex-col-reverse  lg:gap-32 lg:text-center relative">
                     {/* Our Mission Section */}
                     <div className="lg:w-3/5  lg:relative lg:z-10">

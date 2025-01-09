@@ -17,5 +17,5 @@ export default PagesTitle;
 
 PagesTitle.propTypes = {
 
-     title: PropTypes.object,
+     title: PropTypes.string,
 }

@@ -6,22 +6,29 @@ const ContactFromNavbar = () => {
                <h1 className="text-3xl font-semibold text-center">Contact Us</h1>
                <div className="flex justify-center gap-10">
                     <NavLink
-                         to={'customerFrom'}
+                         to={'/contactUs/customerFrom'}
+                         end
                          className={({ isActive }) =>
-                              isActive ? 'border-2 border-black py-2  px-3 bg-primaryColor text-secondaryColor font-medium' : 'border-2 px-3 py-2 '
+                              isActive
+                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium '
+                                   : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor'
                          }
                     >
                          Customer
                     </NavLink>
                     <NavLink
-                         to={'landOwnerFrom'}
+                         to={'/contactUs/landOwnerFrom'}
+
                          className={({ isActive }) =>
-                              isActive ? 'border-2 border-black py-2  px-3 bg-primaryColor text-secondaryColor font-medium' : 'border-2 px-3 py-2 '
+                              isActive
+                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium'
+                                   : 'border-2 px-3 py-2'
                          }
                     >
                          Land Owner
                     </NavLink>
                </div>
+
 
           </div>
      );

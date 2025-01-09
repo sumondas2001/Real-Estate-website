@@ -40,9 +40,10 @@ const router = createBrowserRouter([
                     path: '/contactUs',
                     element: <ContactUs></ContactUs>,
                     children: [
+
                          {
                               path: 'customerFrom',
-                              element: <CustomerFrom />
+                              element: <CustomerFrom />,
                          },
                          {
                               path: 'landOwnerFrom',
