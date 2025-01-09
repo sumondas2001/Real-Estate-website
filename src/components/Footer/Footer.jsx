@@ -5,12 +5,12 @@ import { FaFacebook, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa
 const Footer = () => {
      return (
           <div
-               className='  object-cover py-10  text-white bg-slate-900'>
+               className='  object-cover py-10  text-white bg-secondaryColor'>
 
 
                <div className='flex justify-center items-center'>
                     <Link to={'/'}>
-                         <img className='h-24 w-32 brightness-200' src={logo} alt="" />
+                         <img className='h-24 w-32 brightness-200 ' src={logo} alt="" />
                     </Link>
                </div>
                <div className='flex gap-6 mt-6 justify-center items-center'>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </a>
                </div>
                <div>
-                    <ul className='md:flex lg:flex flex-row text-center justify-center lg:gap-20 md:gap-10  mt-8'>
+                    <ul className='grid lg:grid-cols-6 md:grid-cols-6 grid-cols-3 lg:mx-96 text-center md:gap-y-0  gap-y-6   mt-8'>
                          <Link to={'/'}><li className='text-sm font-medium hover:text-primaryColor mb-1 '>HOME</li></Link>
 
                          <Link to={'/about'}><li className='text-sm font-medium hover:text-primaryColor mb-1'>ABOUT</li></Link>

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FaPhone, FaEnvelopeOpen, FaLocationDot } from "react-icons/fa6";
 
 const Address = ({ address }) => {
@@ -46,3 +47,10 @@ const Address = ({ address }) => {
 };
 
 export default Address;
+
+
+Address.propTypes = {
+
+     address: PropTypes.object,
+
+}
