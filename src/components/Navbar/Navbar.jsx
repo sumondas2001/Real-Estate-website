@@ -51,7 +51,7 @@ const Navbar = () => {
                               ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
                               : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
-                         to={'/property'}
+                         to={'/property/all-projects'}
                     >PROPERTY
                     </NavLink>
                </li>
@@ -81,7 +81,7 @@ const Navbar = () => {
                               ? "focus:bg-transparent focus:text-primaryColor hover:underline hover:decoration-primaryColor text-primaryColor"
                               : "hover:underline decoration-primaryColor hover:text-primaryColor "
                     }
-                         to={'/contactUs'}
+                         to={'/contactUs/customerFrom'}
                     >CONTACT US
                     </NavLink>
                </li>

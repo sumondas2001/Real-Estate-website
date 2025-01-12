@@ -17,21 +17,25 @@ const AddressSection = () => {
 
      }, [])
      return (
-          <div className="my-10 ">
-               <h1 className="text-4xl font-medium text-center text-primaryColor mb-10">OFFICE ADDRESS</h1>
 
-               <div className="  border-b-[1px] border-t-[1px] border-gray-700">
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-0 md:gap-0 gap-10">
+          <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px]  mx-auto">
+               <div className="my-10 ">
+                    <h1 className="text-4xl font-medium text-center text-primaryColor mb-10">OFFICE ADDRESS</h1>
 
-
-                         {
-                              address.map(address => <Address address={address} key={address.id}></Address>)
-                         }
+                    <div className=" ">
+                         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-0 md:gap-0 gap-10">
 
 
+                              {
+                                   address.map(address => <Address address={address} key={address.id}></Address>)
+                              }
+
+
+                         </div>
                     </div>
                </div>
           </div>
+
      );
 };
 

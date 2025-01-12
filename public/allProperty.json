@@ -1,0 +1,192 @@
+[
+     {
+          "id": 1,
+          "propertyname": "ICON TOWER",
+          "location": "Gulshan",
+          "title": "RESIDENTIAL",
+          "types": "upComing",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://baydevelopments.com/wp-content/uploads/2021/01/Bays-Edgewater.jpg"
+     },
+     {
+          "id": 2,
+          "propertyname": "Residential",
+          "location": "Banani",
+          "title": "RESIDENTIAL",
+          "types": "upComing",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://baydevelopments.com/wp-content/uploads/2021/02/Bays-23-GA.jpg"
+     },
+     {
+          "id": 3,
+          "propertyname": "THE IMPERIAL",
+          "location": "Bashundhara Residential Area",
+          "title": "RESIDENTIAL",
+          "types": "upComing",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://baydevelopments.com/wp-content/uploads/2021/06/Bay-Arvia.jpg"
+     },
+     {
+          "id": 4,
+          "propertyname": "MINERVA",
+          "location": "Bashundhara R/A",
+          "title": "RESIDENTIAL",
+          "types": "upComing",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://baydevelopments.com/wp-content/uploads/2021/02/Bays-Bellavista.jpg"
+     },
+     {
+          "id": 5,
+          "propertyname": "CELESTA",
+          "location": "Dhanmondi R/A",
+          "title": "RESIDENTIAL",
+          "types": "upComing",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://rancondevelopments.com/media/images/GPH_01.2e16d0ba.fill-425x387.jpg"
+     },
+     {
+          "id": 6,
+          "propertyname": "AVELINE",
+          "location": "Bashundhara R/A",
+          "title": "RESIDENTIAL",
+          "types": "upComing",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://rancondevelopments.com/media/images/01_eJwa1Wx.2e16d0ba.fill-425x387.jpg"
+     },
+     {
+          "id": 7,
+          "propertyname": "ENSO",
+          "location": "Bashundhara R/A",
+          "title": "RESIDENTIAL",
+          "types": "completed",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://rancondevelopments.com/media/images/21.2e16d0ba.fill-425x387.jpg"
+     },
+     {
+          "id": 8,
+          "propertyname": "RANCON AVENUE 102",
+          "location": "Gulshan",
+          "title": "Commercial",
+          "types": "completed",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://rancondevelopments.com/media/images/Back_day_cam_022.2e16d0ba.fill-425x387.jpg"
+     },
+     {
+          "id": 9,
+          "propertyname": "THE IMPERIAL",
+          "location": "Bashundhara",
+          "title": "RESIDENTIAL",
+          "types": "completed",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://rancondevelopments.com/media/images/Minerva_1_wrt9FdG.2e16d0ba.fill-425x387.jpg"
+     },
+     {
+          "id": 10,
+          "propertyname": "ICON TOWER",
+          "location": "Gulshan",
+          "title": "Commercial",
+          "types": "completed",
+          "landArea": "1.75 Katha",
+          "orientation": "North",
+          "frontRoad": "30 feet",
+          "apartmentSize": {
+               "A": "650 sft.",
+               "B": "650 sft."
+          },
+          "residentialFloors": "G+5",
+          "numberOfParking": 2,
+          "numberOfElevator": 0,
+          "handoverDate": "November 2020",
+          "img": "https://rancondevelopments.com/media/images/1_fKCJH0S.2e16d0ba.fill-425x387.jpg"
+     }
+]

@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 const CustomerFrom = () => {
      const handelCustomerFrom = (event) => {
           event.preventDefault();
@@ -9,6 +11,8 @@ const CustomerFrom = () => {
           const location = from.location.value;
           const messages = from.messages.value;
           console.log(name, email, contactsNumber, size, location, messages);
+          toast.success('Your Messages Submit Successfully');
+          from.reset();
      }
      return (
           <div className="py-16 bg-black p-10 ">

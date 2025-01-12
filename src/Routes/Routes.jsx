@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Main from "../Layout/Main";
 import About from "../Pages/About/About";
 import Property from "../Pages/Property/Property";
@@ -8,6 +8,9 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import Home from "../Pages/Home/Home";
 import CustomerFrom from "../Pages/ContactUs/CustomerFrom/CustomerFrom";
 import LandOwnerFrom from "../Pages/ContactUs/LandOwnerFrom/LandOwnerFrom";
+import AllProjects from "../Pages/Property/AllProjects/AllProjects";
+import UpcomingProjects from "../Pages/Property/UpcomingProjects/UpcomingProjects";
+import CompletedProjects from "../Pages/Property/CompletedProjects/CompletedProjects";
 
 
 const router = createBrowserRouter([
@@ -26,7 +29,21 @@ const router = createBrowserRouter([
                },
                {
                     path: '/property',
-                    element: <Property></Property>
+                    element: <Property></Property>,
+                    children: [
+                         {
+                              path: 'all-projects',
+                              element: <AllProjects></AllProjects>
+                         },
+                         {
+                              path: 'up-coming-projects',
+                              element: <UpcomingProjects></UpcomingProjects>
+                         },
+                         {
+                              path: 'completed',
+                              element: <CompletedProjects></CompletedProjects>
+                         }
+                    ]
                },
                {
                     path: '/blog',
@@ -40,7 +57,10 @@ const router = createBrowserRouter([
                     path: '/contactUs',
                     element: <ContactUs></ContactUs>,
                     children: [
-
+                         // {
+                         //      path: '',
+                         //      element: <Navigate to="/contactUs/customerFrom" />
+                         // },
                          {
                               path: 'customerFrom',
                               element: <CustomerFrom />,

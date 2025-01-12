@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 
-const ContactFromNavbar = () => {
+const ProjectsNavBar = () => {
      return (
-          <div className="space-y-6 mt-20 bg-secondaryColor py-10">
-               <h1 className="text-3xl font-semibold text-center">Contact Us</h1>
-               <div className="flex justify-center gap-10">
+          <div className="space-y-6  py-10">
+
+               <div className="flex justify-start gap-10">
                     <NavLink
-                         to={'/contactUs/customerFrom'}
+                         to={'/property/all-projects'}
                          end
                          className={({ isActive }) =>
                               isActive
@@ -14,10 +14,10 @@ const ContactFromNavbar = () => {
                                    : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor'
                          }
                     >
-                         Customer
+                         ALL
                     </NavLink>
                     <NavLink
-                         to={'/contactUs/landOwnerFrom'}
+                         to={'/property/up-coming-projects'}
 
                          className={({ isActive }) =>
                               isActive
@@ -25,7 +25,18 @@ const ContactFromNavbar = () => {
                                    : 'border-2 px-3 py-2'
                          }
                     >
-                         Land Owner
+                         UPCOMING
+                    </NavLink>
+                    <NavLink
+                         to={'/property/completed'}
+
+                         className={({ isActive }) =>
+                              isActive
+                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium'
+                                   : 'border-2 px-3 py-2'
+                         }
+                    >
+                         COMPLETED
                     </NavLink>
                </div>
 
@@ -34,4 +45,4 @@ const ContactFromNavbar = () => {
      );
 };
 
-export default ContactFromNavbar;
+export default ProjectsNavBar;

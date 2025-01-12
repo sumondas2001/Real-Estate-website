@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 
 const LandOwnerFrom = () => {
      const handelLandOwnerFrom = (event) => {
@@ -11,6 +12,9 @@ const LandOwnerFrom = () => {
           const landLocation = from.landLocation.value;
           const messages = from.messages.value;
           console.log(landOwnerName, email, contactNumber, contactPerson, landSize, landLocation, messages);
+
+          toast.success('Your Messages Submit Successfully');
+          from.reset();
      }
      return (
           <div className="py-16 bg-black p-10 ">
