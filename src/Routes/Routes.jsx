@@ -11,6 +11,7 @@ import LandOwnerFrom from "../Pages/ContactUs/LandOwnerFrom/LandOwnerFrom";
 import AllProjects from "../Pages/Property/AllProjects/AllProjects";
 import UpcomingProjects from "../Pages/Property/UpcomingProjects/UpcomingProjects";
 import CompletedProjects from "../Pages/Property/CompletedProjects/CompletedProjects";
+import PropertyDetailsCard from "../Shared/PropertyDetailsCard/PropertyDetailsCard";
 
 
 const router = createBrowserRouter([
@@ -57,10 +58,7 @@ const router = createBrowserRouter([
                     path: '/contactUs',
                     element: <ContactUs></ContactUs>,
                     children: [
-                         // {
-                         //      path: '',
-                         //      element: <Navigate to="/contactUs/customerFrom" />
-                         // },
+
                          {
                               path: 'customerFrom',
                               element: <CustomerFrom />,
@@ -71,6 +69,10 @@ const router = createBrowserRouter([
                          }
                     ]
                },
+               {
+                    path: '/property-details/:id',
+                    element: <PropertyDetailsCard></PropertyDetailsCard>
+               }
 
           ]
      }
