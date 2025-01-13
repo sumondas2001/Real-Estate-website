@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Cinzel: '"Cinzel", serif',
+        Playfair: '"Playfair Display", serif',
       },
       colors: {
         primaryColor: 'var(--Primary)',

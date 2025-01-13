@@ -8,7 +8,7 @@ const AboutUs = () => {
                <div className="flex  lg:flex-row md:flex-col flex-col lg:gap-32 md:gap-20 gap-16 py-24 lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] justify-between  px-0 mx-auto">
                     <div className="lg:w-1/2 md:w-full w-full space-y-10">
                          <h1 className="lg:text-5xl md:text-3xl text-2xl lg:text-start text-center font-medium text-white">A Legacy Written in Concrete</h1>
-                         <p className="text-base text-center lg:text-start font-normal text-white">
+                         <p className="text-base text-justify lg:text-start font-normal text-white">
                               {
                                    description.slice(0, 970)
                               }

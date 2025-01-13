@@ -4,14 +4,14 @@ const ProjectsNavBar = () => {
      return (
           <div className="space-y-6  py-10">
 
-               <div className="flex justify-start gap-10">
+               <div className="flex justify-start lg:gap-10 md:gap-6 gap-3 ">
                     <NavLink
                          to={'/property/all-projects'}
                          end
                          className={({ isActive }) =>
                               isActive
-                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium '
-                                   : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor'
+                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium lg:text-base md:text-base text-sm'
+                                   : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor lg:text-base md:text-base text-sm'
                          }
                     >
                          ALL
@@ -21,8 +21,8 @@ const ProjectsNavBar = () => {
 
                          className={({ isActive }) =>
                               isActive
-                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium'
-                                   : 'border-2 px-3 py-2'
+                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor lg:text-base md:text-base text-sm text-secondaryColor font-medium'
+                                   : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor lg:text-base md:text-base text-sm'
                          }
                     >
                          UPCOMING
@@ -32,8 +32,8 @@ const ProjectsNavBar = () => {
 
                          className={({ isActive }) =>
                               isActive
-                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium'
-                                   : 'border-2 px-3 py-2'
+                                   ? 'border-2 border-black py-2 px-3 bg-primaryColor lg:text-base md:text-base text-sm text-secondaryColor font-medium'
+                                   : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor lg:text-base md:text-base text-sm'
                          }
                     >
                          COMPLETED

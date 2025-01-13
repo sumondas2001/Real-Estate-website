@@ -15,7 +15,7 @@ const PropertyCary = ({ property }) => {
                               alt={propertyname}
                          />
                     </div>
-                    <div className="space-y-2 text-center">
+                    <div className="space-y-2 text-start">
                          <h1 className="text-base font-light">{title.toUpperCase()}</h1>
                          <h3 className="text-xl font-medium text-primaryColor">
                               {propertyname.toUpperCase()}

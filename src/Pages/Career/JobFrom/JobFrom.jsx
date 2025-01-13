@@ -64,9 +64,10 @@ const JobFrom = () => {
                                    <input id="dropzone-file" type="file" className="hidden" />
                               </label>
                          </div>
-                         <div className="form-control mt-6">
-                              <button className="btn bg-secondaryColor ">Login</button>
-                         </div>
+
+                         <button type="submit" className=" px-10  py-3 text-base font-semibold bg-primaryColor text-black hover:bg-secondaryColor hover:text-primaryColor ">Submit</button>
+
+
                     </form>
                </div>
           </div>

@@ -13,7 +13,7 @@ const Main = () => {
 
 
      return (
-          <div className="font-Cinzel">
+          <div className="font-Playfair">
                <Navbar></Navbar>
                <Outlet></Outlet>
                <Footer></Footer>

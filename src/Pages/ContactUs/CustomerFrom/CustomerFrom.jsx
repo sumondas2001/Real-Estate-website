@@ -15,9 +15,9 @@ const CustomerFrom = () => {
           from.reset();
      }
      return (
-          <div className="py-16 bg-black p-10 ">
+          <div className="py-16 bg-black lg:px-10 md:px-10  ">
                <h1 className="text-xl mb-4 text-primaryColor">Give your details here</h1>
-               <form onSubmit={handelCustomerFrom} className="space-y-9">
+               <form onSubmit={handelCustomerFrom} className="lg:space-y-9 md:space-y-8 space-y-6">
                     <div className="flex lg:flex-row md:flex-row flex-col gap-6">
                          <input
                               type="text"

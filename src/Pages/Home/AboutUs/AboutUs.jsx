@@ -11,9 +11,9 @@ const AboutUs = () => {
                               </div>
                               <h1 className="lg:text-4xl md:text-3xl text-xl font-medium">The Highest Horizon Of Luxury</h1>
                          </div>
-                         <div className="lg:w-1/2 w-full lg:text-start text-center">
+                         <div className="lg:w-1/2 w-full lg:text-start text-justify">
                               <p className="lg:text-base md:text-base  text-sm font-medium text-white">REAL STATE Developments provides exclusive commercial and residential spaces in response to the growing need for contemporary, high quality, and high-end delivery of architectural design in the metropolitan city of Dhaka.
-                                   <br />
+
                                    Our services expand towards multi-tiered real estate solutions that fully address all design and lifestyle parameters from the initial planning stages to consultation up to interior design and furnishing. Our expertise encompasses bespoke designs incorporated into restaurants, car dealerships, showrooms, cafés, bakeries, hotels, corporate offices, and private homes.</p>
                          </div>
 

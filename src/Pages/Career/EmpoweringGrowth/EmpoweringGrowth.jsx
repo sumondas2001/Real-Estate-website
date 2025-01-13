@@ -10,7 +10,7 @@ const EmpoweringGrowth = () => {
                <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px]  mx-auto">
                     <div className="text-center py-28 space-y-10  text-white  ">
                          <h1 className="lg:text-5xl md:text-3xl text-xl font-semibold lg:w-[800px] md:w-[500px]  mx-auto">{info.title}</h1>
-                         <p className=" font-normal text-sm lg:text-base md:text-base lg:w-3/4 mx-auto ">{
+                         <p className=" font-normal text-sm lg:text-base md:text-base lg:w-3/4 mx-auto  text-justify">{
                               info.description.slice(0, 561)
                          }</p>
                     </div>
