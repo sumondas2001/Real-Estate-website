@@ -18,6 +18,7 @@ import { SlSizeFullscreen } from "react-icons/sl";
 import { VscLayoutPanelCenter } from "react-icons/vsc";
 import PropertyDetailsFeatures from "../PropertyDetailsFeatures/PropertyDetailsFeatures";
 import PropertyDetailsGallery from "../PropertyDetailsGallery/PropertyDetailsGallery";
+import PropertyDetailsLocation from "../PropertyDetailsLocation/PropertyDetailsLocation";
 
 
 
@@ -52,7 +53,10 @@ const PropertyDetailsCard = () => {
           CoverImg: 'https://anwarlandmark.com/admin/uploads/product/anwar-landmark-rosetta/2050x1152/1729403553EMBsg_m.jpg',
           title: allProperties?.propertyname,
           description: allProperties?.location
-     }
+     };
+
+
+     const mapLink = allProperties?.locationMap
      return (
           <div >
                <PagesTitle title={'PROPERTY DETAILS'}></PagesTitle>
@@ -174,7 +178,10 @@ const PropertyDetailsCard = () => {
 
 
                </div >
+               {/* features card */}
                <PropertyDetailsFeatures></PropertyDetailsFeatures>
+
+               {/* gallery img  */}
 
 
                <div className=" lg:max-w-[1200px] md:max-w-[700px] max-w-[360px]  mx-auto space-y-10 lg:mt-20 mb-20">
@@ -190,7 +197,10 @@ const PropertyDetailsCard = () => {
                          }
 
                     </div>
+                    <PropertyDetailsLocation mapLink={mapLink}></PropertyDetailsLocation>
                </div>
+
+
           </div >
      );
 };

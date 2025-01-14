@@ -1,5 +1,6 @@
 import PagesCoverImg from "../../Shared/PagesCoverImg/PagesCoverImg";
 import PagesTitle from "../../Shared/PagesTitle/PagesTitle";
+import BlogsCard from "./BlogsCard/BlogsCard";
 
 const Blog = () => {
      const CoverImg = 'https://i.ibb.co.com/K9HLZZF/daria-nepriakhina-nw-Mx-Sz-GFB68-unsplash.jpg';
@@ -17,9 +18,12 @@ const Blog = () => {
                <PagesTitle title={"Blog"}></PagesTitle>
 
 
-               <div>
-                    <PagesCoverImg info={info} ></PagesCoverImg>
+               <PagesCoverImg info={info} ></PagesCoverImg>
+
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto mt-20">
+                    <BlogsCard></BlogsCard>
                </div>
+
           </div>
      );
 };

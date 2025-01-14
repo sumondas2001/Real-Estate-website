@@ -8,9 +8,9 @@ const AchievementsCounts = () => {
 
 
      useEffect(() => {
-          axios.get('/public/achievements.json')
+          axios.get('/achievements.json')
                .then(res => {
-                    console.log(res.data);
+
                     setAchievementsCount(res.data)
                })
                .catch(error => {
@@ -23,7 +23,7 @@ const AchievementsCounts = () => {
 
                <div className="grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1 py-20 lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] justify-between mx-auto mt-20 mb-20">
                     {
-                         achievementsCounts.map(count => <CountSection key={count.id} count={count}></CountSection>
+                         achievementsCounts?.map(count => <CountSection key={count.id} count={count}></CountSection>
 
                          )
                     }

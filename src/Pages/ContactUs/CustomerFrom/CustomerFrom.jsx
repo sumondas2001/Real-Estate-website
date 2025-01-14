@@ -52,7 +52,7 @@ const CustomerFrom = () => {
                               placeholder="Your Preferred Location" required name="location"
                          />
                          <textarea
-                              type="email"
+                              type="text"
                               className=" w-full focus:outline-none focus:border-primaryColor  border bg-black text-white rounded-md  px-4 pt-8 pb-20"
                               placeholder="Your messages" name="messages"
                          />

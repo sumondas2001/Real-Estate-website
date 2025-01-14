@@ -16,34 +16,34 @@ const JobFrom = () => {
      return (
           <div className="text-white py-20">
                <div>
-                    <h1 className="text-4xl font-semibold text-center">Apply for the position</h1>
+                    <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-center">Apply for the position</h1>
                </div>
-               <div className=" w-full  ">
+               <div className=" w-full  lg:mt-14 md:mt-10 mt-6">
                     <form onSubmit={handelJobFrom} className="space-y-16">
 
 
                          <div className="flex lg:flex-row md:flex-row flex-col gap-10">
 
                               <div className="lg:w-1/2 md:w-1/2 w-full">
-                                   <input type="text" placeholder="name" name="name" className="input border-[2px] rounded-none w-full  border-b-primaryColor" required />
+                                   <input type="text" placeholder="name" name="name" className="py-3 w-full focus:outline-none focus:border-primaryColor px-6 border bg-black text-white" required />
                               </div>
                               <div className="lg:w-1/2 md:w-1/2 w-full">
-                                   <input type="text" placeholder="number" name="number" className="input border-[2px] rounded-none w-full  border-b-primaryColor" required />
+                                   <input type="text" placeholder="number" name="number" className="py-3 w-full focus:outline-none focus:border-primaryColor px-6 border bg-black text-white" required />
                               </div>
                          </div>
 
                          <div className="flex lg:flex-row md:flex-row flex-col gap-10">
 
                               <div className="lg:w-1/2 md:w-1/2 w-full">
-                                   <input type="email" placeholder="email" name="email" className="input border-[2px] rounded-none w-full  border-b-primaryColor" required />
+                                   <input type="email" placeholder="email" name="email" className="py-3 w-full focus:outline-none focus:border-primaryColor px-6 border bg-black text-white" required />
                               </div>
                               <div className="lg:w-1/2 md:w-1/2 w-full">
-                                   <input type="text" placeholder="address" name="address" className="input border-[2px] rounded-none w-full  border-b-primaryColor" />
+                                   <input type="text" placeholder="address" name="address" className="py-3 w-full focus:outline-none focus:border-primaryColor px-6 border bg-black text-white" />
                               </div>
                          </div>
                          <div>
-                              <div className="w-full">
-                                   <input type="text" placeholder="cover letter" name="coverLetter" className="input border-[2px] rounded-none w-full  border-b-primaryColor" />
+                              <div className="w-full ">
+                                   <textarea type="text" placeholder="cover letter" name="coverLetter" className="py-3 w-full focus:outline-none px-4 pt-8 pb-20  focus:border-primaryColor  border bg-black text-white" />
                               </div>
 
                          </div>

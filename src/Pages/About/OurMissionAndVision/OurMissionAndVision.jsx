@@ -2,10 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const OurMissionAndVision = () => {
-     const [ourMission, setOurMission] = useState([]);
+     const [ourMission, setOurMission] = useState(null);
      // console.log(ourMission.id);
-     const [ourVision, setOurVision] = useState([]);
-
+     const [ourVision, setOurVision] = useState(null);
+     // our Mission section
      useEffect(() => {
           axios.get('/OurMission.json')
                .then(res => {
@@ -18,10 +18,13 @@ const OurMissionAndVision = () => {
                })
 
      }, [])
+
+     // our vision section
+
      useEffect(() => {
           axios.get('/OurVision.json')
                .then(res => {
-                    console.log(res.data);
+
                     setOurVision(res.data)
                })
 

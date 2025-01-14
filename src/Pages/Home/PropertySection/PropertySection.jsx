@@ -7,7 +7,6 @@ const PropertySection = () => {
      useEffect(() => {
           axios.get('/allProperty.json')
                .then(res => {
-                    console.log(res.data);
                     setAllProperties(res.data)
                })
                .catch(error => {
