@@ -20,7 +20,7 @@ const Blog = () => {
 
                <PagesCoverImg info={info} ></PagesCoverImg>
 
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto mt-20">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto mt-20 mb-20">
                     <BlogsCard></BlogsCard>
                </div>
 

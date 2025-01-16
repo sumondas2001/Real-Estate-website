@@ -2,9 +2,12 @@
 const AboutUs = () => {
      return (
           <div>
-               <div className="bg-secondaryColor ">
+               <div
+
+                    className="bg-secondaryColor ">
                     <div className="flex lg:flex-row md:flex-col justify-between flex-col mt-20  lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] lg:py-20 py-16  px-0 mx-auto lg:space-y-0 space-y-6">
-                         <div className="lg:w-1/2 w-full lg:text-start text-center  lg:space-y-0 space-y-6">
+                         <div
+                              className="lg:w-1/2 w-full lg:text-start text-center  lg:space-y-0 space-y-6">
                               <div className="flex lg:justify-start justify-center items-center gap-4">
                                    <hr className='w-20 md:hidden hidden lg:block  border-[1px] border-primaryColor' />
                                    <h1 className="lg:text-xl  font-normal text-primaryColor">The Highest Horizon Of Luxury</h1>

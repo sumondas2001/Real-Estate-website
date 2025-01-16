@@ -2,14 +2,18 @@ import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { useEffect } from "react";
-import Aos from "aos";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Toaster } from "react-hot-toast";
 
 const Main = () => {
      const { pathname } = useLocation();
+
      useEffect(() => {
-          Aos.init()
+          AOS.init()
      }, []);
+
+
      useEffect(() => {
           window.scrollTo(0, 0);
      }, [pathname]);

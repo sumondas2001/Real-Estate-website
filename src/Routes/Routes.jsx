@@ -12,16 +12,17 @@ import AllProjects from "../Pages/Property/AllProjects/AllProjects";
 import UpcomingProjects from "../Pages/Property/UpcomingProjects/UpcomingProjects";
 import CompletedProjects from "../Pages/Property/CompletedProjects/CompletedProjects";
 import PropertyDetailsCard from "../Shared/PropertyDetailsCard/PropertyDetailsCard";
+import BlogDetails from "../Shared/BlogDetails/BlogDetails";
 
 
 const router = createBrowserRouter([
      {
           path: '/',
-          element: <Main></Main>,
+          element: <Main />,
           children: [
                {
                     path: '/',
-                    element: <Home></Home>,
+                    element: <Home />,
 
                },
                {
@@ -30,33 +31,33 @@ const router = createBrowserRouter([
                },
                {
                     path: '/property',
-                    element: <Property></Property>,
+                    element: <Property />,
                     children: [
                          {
                               path: 'all-projects',
-                              element: <AllProjects></AllProjects>
+                              element: <AllProjects />
                          },
                          {
                               path: 'up-coming-projects',
-                              element: <UpcomingProjects></UpcomingProjects>
+                              element: <UpcomingProjects />
                          },
                          {
                               path: 'completed',
-                              element: <CompletedProjects></CompletedProjects>
+                              element: <CompletedProjects />
                          }
                     ]
                },
                {
                     path: '/blog',
-                    element: <Blog></Blog>
+                    element: <Blog />
                },
                {
                     path: '/career',
-                    element: <Career></Career>
+                    element: <Career />
                },
                {
                     path: '/contactUs',
-                    element: <ContactUs></ContactUs>,
+                    element: <ContactUs />,
                     children: [
 
                          {
@@ -71,7 +72,11 @@ const router = createBrowserRouter([
                },
                {
                     path: '/property-details/:id',
-                    element: <PropertyDetailsCard></PropertyDetailsCard>
+                    element: <PropertyDetailsCard />
+               },
+               {
+                    path: '/blog-details/:id',
+                    element: <BlogDetails />
                }
 
           ]

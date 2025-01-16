@@ -65,9 +65,8 @@ const Slider = () => {
 
 
 
-                                             className="absolute inset-0 flex items-center justify-center text-primaryColor">
+                                             className="absolute inset-0 flex items-center justify-start lg:left-20 md:left-8 left-7 text-primaryColor">
                                              <h1
-
                                                   className="lg:text-7xl md:text-5xl text-2xl  font-medium opacity-70">{slider?.title}</h1>
                                         </div>
                                    </div>
