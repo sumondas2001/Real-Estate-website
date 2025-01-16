@@ -1,9 +1,17 @@
 import './ArchitecturalElement.css'
 
 
+
 const ArchitecturalElementSection1 = () => {
+
+
+
      return (
-          <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-between  mt-20">
+          <div
+
+
+
+               className="flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-between  mt-20">
                <div className=''>
 
                     <img className="lg:w-[800px] class p-2 md:w-full w-full lg:h-[390px] md:h-56 h-44  object-cover"
