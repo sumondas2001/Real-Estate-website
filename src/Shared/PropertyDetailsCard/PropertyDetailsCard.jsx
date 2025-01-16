@@ -56,7 +56,7 @@ const PropertyDetailsCard = () => {
      };
 
 
-     const mapLink = allProperties?.locationMap
+     const mapLink = allProperties?.locationMap || "default_embed_url_here";
      return (
           <div >
                <PagesTitle title={'PROPERTY DETAILS'}></PagesTitle>
