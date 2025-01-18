@@ -18,7 +18,15 @@ import { Link } from "react-router-dom";
 const PropertyDetailsFeatures = () => {
      return (
 
-          <div className="py-20 bg-secondaryColor mb-10">
+          <div
+               data-aos="fade-up"
+               data-aos-offset="100"
+               data-aos-delay="0"
+               data-aos-duration="2000"
+               data-aos-easing="ease-out-cubic"
+
+
+               className="py-20 bg-secondaryColor mb-10">
                <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto space-y-16">
                     <div>
                          <h1 className="lg:text-3xl md:text-2xl text-xl  font-semibold text-primaryColor  ">

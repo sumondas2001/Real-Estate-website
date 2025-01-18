@@ -15,7 +15,15 @@ const PropertySection = () => {
      }, [])
      return (
           <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-16 mb-20 mt-20">
-               <div className="space-y-6 mt-10">
+               <div
+                    data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-delay="150"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic"
+
+
+                    className="space-y-6 mt-10">
                     <h1 className="text-3xl font-medium text-primaryColor">OurPerfections</h1>
                     <p className="text-lg font-normal">Real Estate Sapphire Series represents our most luxurious and iconic projects in the most popular and sought-after locations. Experience elegance and comfort with our bold designs, top-tier construction, and premium finishes.</p>
                </div>

@@ -27,6 +27,8 @@ const About = () => {
                     <OurMissionAndVision />
                     <GallerySection />
                </div>
+
+
           </div>
      );
 };

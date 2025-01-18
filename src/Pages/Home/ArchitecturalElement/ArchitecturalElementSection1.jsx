@@ -8,7 +8,11 @@ const ArchitecturalElementSection1 = () => {
 
      return (
           <div
-
+               data-aos="fade-right"
+               data-aos-offset="100"
+               data-aos-delay="50"
+               data-aos-duration="2500"
+               data-aos-easing="ease-out-cubic"
 
 
                className="flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-between  mt-20">

@@ -6,8 +6,6 @@ const Footer = () => {
      return (
           <div
                className='  object-cover py-10  text-white bg-secondaryColor'>
-
-
                <div className='flex justify-center items-center'>
                     <Link to={'/'}>
                          <img className='h-24 w-32 brightness-200 ' src={logo} alt="" />

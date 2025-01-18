@@ -14,9 +14,17 @@ const GallerySection = () => {
                })
      }, [])
      return (
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 grid-cols-1 lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] justify-between mx-auto mb-20">
+          <div
+
+               className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 grid-cols-1 lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] justify-between mx-auto mb-20">
                {
-                    galleryImg?.map(img => <div className="image-container" key={img.id}>
+                    galleryImg?.map(img => <div
+                         data-aos="fade-up"
+                         data-aos-offset="100"
+                         data-aos-delay="0"
+                         data-aos-duration="2000"
+                         data-aos-easing="ease-out-cubic"
+                         className="image-container" key={img.id}>
                          <img className="h-[550px] object-cover  w-full" src={img.img} alt="" />
 
                     </div>)

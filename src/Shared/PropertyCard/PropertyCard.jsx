@@ -7,7 +7,15 @@ const PropertyCary = ({ property }) => {
      const { img, location, title, propertyname, id } = property;
      return (
           <Link to={`/property-details/${id}`}>
-               <div className="space-y-6">
+               <div
+                    data-aos="fade-left"
+                    data-aos-offset="100"
+                    data-aos-delay="0"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic"
+
+
+                    className="space-y-6 ">
                     <div className="image-container">
                          <img
                               className="w-full h-[500px] object-cover"

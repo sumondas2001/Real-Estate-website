@@ -37,9 +37,27 @@ const BlogDetails = () => {
                <PagesCoverImg info={info} />
 
 
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] space-y-10  mx-auto  mt-20 mb-10">
-                    <h1 className="md:text-2xl lg:text-3xl text-xl text-primaryColor font-semibold">{blogTitle}</h1>
-                    <p className="text-lg font-light leading-8">{blogDescription}</p>
+               <div
+
+
+                    className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] space-y-10  mx-auto  mt-20 mb-10">
+                    <h1
+                         data-aos="fade-up"
+                         data-aos-offset="100"
+                         data-aos-delay="0"
+                         data-aos-duration="2000"
+                         data-aos-easing="ease-out-cubic"
+
+
+                         className="md:text-2xl lg:text-3xl text-xl text-primaryColor font-semibold">{blogTitle}</h1>
+                    <p
+                         data-aos="fade-up"
+                         data-aos-offset="100"
+                         data-aos-delay="150"
+                         data-aos-duration="2000"
+                         data-aos-easing="ease-out-cubic"
+
+                         className="text-lg font-light leading-8">{blogDescription}</p>
                </div>
           </div>
      );

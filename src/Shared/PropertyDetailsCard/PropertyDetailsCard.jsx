@@ -65,7 +65,14 @@ const PropertyDetailsCard = () => {
 
                <div className=" lg:max-w-[1200px] md:max-w-[700px] max-w-[360px]  mx-auto flex lg:flex-row flex-col lg:gap-32  gap-10  justify-between ">
 
-                    <div className="flex flex-col lg:items-start items-center mt-16 lg:w-1/2">
+                    <div
+                         data-aos="fade-right"
+                         data-aos-offset="100"
+                         data-aos-delay="0"
+                         data-aos-duration="2000"
+                         data-aos-easing="ease-out-cubic"
+
+                         className="flex flex-col lg:items-start items-center mt-16 lg:w-1/2">
                          <div className=" w-full mb-10">
                               <h1 className="lg:text-3xl md:text-3xl text-2xl   font-bold text-primaryColor mb-2">{allProperties?.propertyname}</h1>
                          </div>
@@ -167,7 +174,15 @@ const PropertyDetailsCard = () => {
                               </div>
                          </div>
                     </div >
-                    <div className="relative overflow-hidden lg:w-1/2">
+                    <div
+
+                         data-aos="fade-left"
+                         data-aos-offset="100"
+                         data-aos-delay="0"
+                         data-aos-duration="2000"
+                         data-aos-easing="ease-out-cubic"
+
+                         className="relative overflow-hidden lg:w-1/2">
                          <img
                               className="object-cover lg:h-[700px]  w-full md:h-[400px] h-[300px] transition-transform duration-[0.80s] ease-in-out hover:scale-110"
                               src={allProperties?.img}
@@ -192,7 +207,9 @@ const PropertyDetailsCard = () => {
 
                          {
                               allProperties?.gallery?.map((img, index) => (
-                                   <PropertyDetailsGallery img={img} key={index}></PropertyDetailsGallery>
+                                   <PropertyDetailsGallery
+
+                                        img={img} key={index}></PropertyDetailsGallery>
                               ))
                          }
 

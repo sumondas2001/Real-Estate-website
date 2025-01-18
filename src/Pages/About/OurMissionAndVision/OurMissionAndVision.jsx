@@ -35,7 +35,14 @@ const OurMissionAndVision = () => {
      }, [])
      return (
           <div className="lg:max-w-[1200px] z-10 md:max-w-[700px] max-w-[360px] mx-auto relative lg:mb-32 md:mb-28 mb-20">
-               <div className="flex lg:flex-row flex-col-reverse  lg:gap-32 lg:text-center relative">
+               <div
+                    data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-delay="0"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic"
+
+                    className="flex lg:flex-row flex-col-reverse  lg:gap-32 lg:text-center relative">
                     {/* Our Mission Section */}
                     <div className="lg:w-3/5  lg:relative lg:z-10">
                          <img className="lg:h-96 md:h-80 h-72  w-full object-cover" src={ourMission?.img} alt="" />
@@ -45,7 +52,13 @@ const OurMissionAndVision = () => {
                          <p className="lg:text-lg text-base font-normal lg:w-96 lg:mx-auto">{ourMission?.description}</p>
                     </div>
                </div>
-               <div className="flex lg:gap-32 lg:flex-row-reverse flex-col-reverse">
+               <div
+                    data-aos="fade-left"
+                    data-aos-offset="100"
+                    data-aos-delay="0"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic"
+                    className="flex lg:gap-32 lg:flex-row-reverse flex-col-reverse">
                     {/* Our Vision Section */}
                     <div className="lg:w-3/5 lg:bottom-4 lg:relative">
                          <img

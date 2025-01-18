@@ -11,7 +11,14 @@ const Video = () => {
      const url = `${embedUrl}?playlist=${embedUrl.split("/").pop()}&autoplay=1&loop=1&controls=0&showinfo=0&autohide=1&modestbranding=1&mute=1&enablejsapi=1`;
 
      return (
-          <div className="youtube-bg">
+          <div
+               data-aos="fade-up"
+               data-aos-offset="100"
+               data-aos-delay="0"
+               data-aos-duration="2000"
+               data-aos-easing="ease-out-cubic"
+
+               className="youtube-bg">
                <div id="player-wrapper">
                     <iframe
                          id="player"

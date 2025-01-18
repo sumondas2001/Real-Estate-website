@@ -14,7 +14,16 @@ const JobFrom = () => {
           console.log(name, number, email, address, coverLetter);
      }
      return (
-          <div className="text-white py-20">
+          <div
+
+               data-aos="fade-up"
+               data-aos-offset="100"
+               data-aos-delay="0"
+               data-aos-duration="2000"
+               data-aos-easing="ease-out-cubic"
+
+
+               className="text-white py-20">
                <div>
                     <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-center">Apply for the position</h1>
                </div>

@@ -15,7 +15,14 @@ const CustomerFrom = () => {
           from.reset();
      }
      return (
-          <div className="py-16 bg-black lg:px-10 md:px-10  ">
+          <div
+               data-aos="fade-up"
+               data-aos-offset="100"
+               data-aos-delay="0"
+               data-aos-duration="2000"
+               data-aos-easing="ease-out-cubic"
+
+               className="py-16 bg-black lg:px-10 md:px-10  ">
                <h1 className="text-xl mb-4 text-primaryColor">Give your details here</h1>
                <form onSubmit={handelCustomerFrom} className="lg:space-y-9 md:space-y-8 space-y-6">
                     <div className="flex lg:flex-row md:flex-row flex-col gap-6">

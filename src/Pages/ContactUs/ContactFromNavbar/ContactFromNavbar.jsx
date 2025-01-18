@@ -2,7 +2,14 @@ import { NavLink } from "react-router-dom";
 
 const ContactFromNavbar = () => {
      return (
-          <div className="space-y-6 mt-20 bg-secondaryColor py-10">
+          <div
+               data-aos="fade-right"
+               data-aos-offset="100"
+               data-aos-delay="0"
+               data-aos-duration="2000"
+               data-aos-easing="ease-out-cubic"
+
+               className="space-y-6 mt-20 bg-secondaryColor py-10">
                <h1 className="text-3xl font-semibold text-center">Contact Us</h1>
                <div className="flex justify-center gap-10">
                     <NavLink

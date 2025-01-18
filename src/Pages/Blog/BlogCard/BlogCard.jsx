@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import './BlogCard.css'
+import PropTypes from "prop-types";
 const BlogCard = ({ blog }) => {
      const { id, blogImg, blogTitle } = blog;
      return (
-          <div className="space-y-6 pb-6  flex flex-col bg-secondaryColor shadow-2xl">
+          <div
+               data-aos="fade-up"
+               data-aos-offset="100"
+               data-aos-delay="0"
+               data-aos-duration="2000"
+               data-aos-easing="ease-out-cubic"
+
+               className="space-y-6 pb-6  flex flex-col bg-secondaryColor shadow-2xl">
                <div className="image-container">
                     <img className="w-full h-[350px] object-cover" src={blogImg} alt="" />
                </div>
@@ -22,3 +30,11 @@ const BlogCard = ({ blog }) => {
 };
 
 export default BlogCard;
+
+
+
+
+BlogCard.propTypes = {
+
+     blog: PropTypes.object,
+}
