@@ -14,6 +14,7 @@ import CompletedProjects from "../Pages/Property/CompletedProjects/CompletedProj
 import PropertyDetailsCard from "../Shared/PropertyDetailsCard/PropertyDetailsCard";
 import BlogDetails from "../Shared/BlogDetails/BlogDetails";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
+import Login from "../Pages/Login/Login";
 
 
 const router = createBrowserRouter([
@@ -79,10 +80,14 @@ const router = createBrowserRouter([
                {
                     path: '/blog-details/:id',
                     element: <BlogDetails />
+               },
+               {
+                    path: '/login',
+                    element: <Login />
                }
 
           ]
-     }
+     },
 ]);
 
 export default router;

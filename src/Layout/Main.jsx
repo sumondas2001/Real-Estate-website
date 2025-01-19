@@ -20,8 +20,8 @@ const Main = () => {
 
      // useEffect(() => {
      //      const lenis = new Lenis({
-     //           duration: 0.0,
-     //           easing: (t) => t * t,
+     //           duration: 0,
+     //           easing: (t) => t,
      //           smooth: true,
      //           direction: 'vertical',
      //      })
