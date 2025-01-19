@@ -8,7 +8,7 @@ const PropertyCary = ({ property }) => {
      return (
           <Link to={`/property-details/${id}`}>
                <div
-                    data-aos="fade-left"
+                    data-aos="fade-up"
                     data-aos-offset="100"
                     data-aos-delay="0"
                     data-aos-duration="2000"

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import Lenis from '@studio-freight/lenis'
+// import Lenis from '@studio-freight/lenis'
 
 import { Toaster } from "react-hot-toast";
 import AOS from 'aos';
@@ -18,23 +18,23 @@ const Main = () => {
           window.scrollTo(0, 0);
      }, [pathname]);
 
-     useEffect(() => {
-          const lenis = new Lenis({
-               duration: 0.0,
-               easing: (t) => t * t,
-               smooth: true,
-               direction: 'vertical',
-          })
+     // useEffect(() => {
+     //      const lenis = new Lenis({
+     //           duration: 0.0,
+     //           easing: (t) => t * t,
+     //           smooth: true,
+     //           direction: 'vertical',
+     //      })
 
-          function raf(time) {
-               lenis.raf(time)
-               requestAnimationFrame(raf)
-          }
+     //      function raf(time) {
+     //           lenis.raf(time)
+     //           requestAnimationFrame(raf)
+     //      }
 
-          requestAnimationFrame(raf)
+     //      requestAnimationFrame(raf)
 
-          return () => lenis.destroy()
-     }, [])
+     //      return () => lenis.destroy()
+     // }, [])
      return (
           <div className="font-Playfair">
                <Navbar></Navbar>

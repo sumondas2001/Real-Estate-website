@@ -13,12 +13,14 @@ import UpcomingProjects from "../Pages/Property/UpcomingProjects/UpcomingProject
 import CompletedProjects from "../Pages/Property/CompletedProjects/CompletedProjects";
 import PropertyDetailsCard from "../Shared/PropertyDetailsCard/PropertyDetailsCard";
 import BlogDetails from "../Shared/BlogDetails/BlogDetails";
+import ErrorPages from "../Pages/ErrorPages/ErrorPages";
 
 
 const router = createBrowserRouter([
      {
           path: '/',
           element: <Main />,
+          errorElement: <ErrorPages />,
           children: [
                {
                     path: '/',
