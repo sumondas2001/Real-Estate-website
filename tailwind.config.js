@@ -12,6 +12,7 @@ export default {
       colors: {
         primaryColor: 'var(--Primary)',
         secondaryColor: 'var(--secondary)',
+        dashboardColor: 'var(--dashboard)'
       },
     },
   },

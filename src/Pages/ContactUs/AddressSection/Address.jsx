@@ -33,8 +33,13 @@ const Address = ({ address }) => {
 
                </div>
                {/* Map Integration with iframe */}
-               <div className=" absolute top-0 opacity-0 hover:opacity-40 z-10 ">
+               <div
+
+
+                    className=" absolute top-0 opacity-0 hover:opacity-40 z-10 ">
                     <iframe
+
+
                          className="lg:w-[400px] md:w-[350px] w-[360px] lg:h-[476px] h-[380px]"
                          src={mapLink}
 

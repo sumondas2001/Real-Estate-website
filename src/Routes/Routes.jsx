@@ -15,6 +15,9 @@ import PropertyDetailsCard from "../Shared/PropertyDetailsCard/PropertyDetailsCa
 import BlogDetails from "../Shared/BlogDetails/BlogDetails";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
 import Login from "../Pages/Login/Login";
+import AdminDashBoard from "../AdminDashBoard/AdminDashBoard";
+import DashBoardLayOut from "../AdminDashBoard/DashBoardLayOut/DashBoardLayOut";
+import AdminSlider from "../AdminDashBoard/AdminSlider/AdminSlider";
 
 
 const router = createBrowserRouter([
@@ -88,6 +91,30 @@ const router = createBrowserRouter([
 
           ]
      },
+
+     // Admin panel 
+     {
+          path: '/admin-dashBoard',
+          element: <AdminDashBoard />,
+          children: [
+               {
+                    path: '/admin-dashBoard',
+                    element: <div><h1>dash Board</h1></div>
+               },
+               {
+                    path: 'admin-slider',
+                    element: <div><h1>admin slider</h1></div>
+               },
+               {
+                    path: 'admin-slider-2',
+                    element: <div><h1>admin slider2</h1></div>
+               },
+               {
+                    path: 'admin-aboutUs',
+                    element: <div><h1>admin aboutUs</h1></div>
+               }
+          ]
+     }
 ]);
 
 export default router;

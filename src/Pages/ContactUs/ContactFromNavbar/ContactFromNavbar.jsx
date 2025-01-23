@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const ContactFromNavbar = () => {
      return (
           <div
-               data-aos="fade-right"
+               data-aos="fade-up"
                data-aos-offset="100"
                data-aos-delay="0"
                data-aos-duration="2000"
