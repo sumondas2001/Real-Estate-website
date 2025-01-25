@@ -15,7 +15,7 @@ const Sidebar = () => {
 
      const links = (
           <>
-               <li className="w-full">
+               <li className="w-full font-medium">
                     <NavLink
                          to="/admin-dashBoard"
                          end
@@ -30,9 +30,9 @@ const Sidebar = () => {
                <li>
                     <button
                          onClick={() => setIsHomeDropdownOpen(!isHomeDropdownOpen)}
-                         className="w-full flex items-center justify-between px-4 py-2 hover:bg-slate-900"
+                         className="w-full flex items-center font-medium justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>Home</span>
+                         <span className="">Home</span>
                          {isHomeDropdownOpen ? (
                               <AiOutlineUp className="text-lg" />
                          ) : (
@@ -45,38 +45,74 @@ const Sidebar = () => {
                          <ul className="ml-4 space-y-1 mt-1">
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/admin-slider"
+                                        to="/admin-dashBoard/home-slider"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider 1
+                                        Slider
                                    </NavLink>
                               </li>
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/admin-slider-2"
+                                        to="/admin-dashBoard/home-about"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider 2
+                                        About
                                    </NavLink>
                               </li>
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/admin-slider-3"
+                                        to="/admin-dashBoard/home-banner"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider 3
+                                        Banner
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/home-video"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Video
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/home-portfolio-1"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Portfolio-1
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/home-portfolio-2"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Portfolio-2
                                    </NavLink>
                               </li>
                          </ul>
@@ -85,7 +121,7 @@ const Sidebar = () => {
                <li>
                     <button
                          onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
-                         className="w-full flex items-center justify-between px-4 py-2 hover:bg-slate-900"
+                         className="w-full flex items-center font-medium justify-between px-4 py-2 hover:bg-slate-900"
                     >
                          <span>About</span>
                          {isAboutDropdownOpen ? (
@@ -97,41 +133,77 @@ const Sidebar = () => {
 
                     {/* Dropdown Links */}
                     {isAboutDropdownOpen && (
-                         <ul className="ml-4 space-y-1 mt-1">
+                         <ul className="ml-4 space-y-1 mt-1 ">
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/admin-slider"
+                                        to="/admin-dashBoard/about-hero"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider 1
+                                        Hero Section
                                    </NavLink>
                               </li>
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/admin-slider-2"
+                                        to="/admin-dashBoard/about-aboutUs"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider 2
+                                        About Us
                                    </NavLink>
                               </li>
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/admin-slider-3"
+                                        to="/admin-dashBoard/about-achievementsCounts"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider 3
+                                        Achievements Counts
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/about-ourMission"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Our Mission
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/about-ourVision"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Our Vision
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/about-imgGallery"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Gallery Img
                                    </NavLink>
                               </li>
                          </ul>
@@ -140,7 +212,7 @@ const Sidebar = () => {
                <li>
                     <button
                          onClick={() => setIsPropertyDropdownOpen(!isPropertyDropdownOpen)}
-                         className="w-full flex items-center justify-between px-4 py-2 hover:bg-slate-900"
+                         className="w-full flex items-center font-medium justify-between px-4 py-2 hover:bg-slate-900"
                     >
                          <span>Property</span>
                          {isPropertyDropdownOpen ? (
@@ -195,7 +267,7 @@ const Sidebar = () => {
                <li>
                     <button
                          onClick={() => setIsBlogDropdownOpen(!isBlogDropdownOpen)}
-                         className="w-full flex items-center justify-between px-4 py-2 hover:bg-slate-900"
+                         className="w-full font-medium flex items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
                          <span>Blog</span>
                          {isBlogDropdownOpen ? (
@@ -250,7 +322,7 @@ const Sidebar = () => {
                <li>
                     <button
                          onClick={() => setIsCareerDropdownOpen(!isCareerDropdownOpen)}
-                         className="w-full flex items-center justify-between px-4 py-2 hover:bg-slate-900"
+                         className="w-full flex font-medium items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
                          <span>Career</span>
                          {isCareerDropdownOpen ? (
@@ -305,7 +377,7 @@ const Sidebar = () => {
                <li>
                     <button
                          onClick={() => setIsContactUsDropdownOpen(!isContactUsDropdownOpen)}
-                         className="w-full flex items-center justify-between px-4 py-2 hover:bg-slate-900"
+                         className="w-full font-medium flex items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
                          <span>Contact Us</span>
                          {isContactUsDropdownOpen ? (
@@ -388,7 +460,7 @@ const Sidebar = () => {
                <div className="overflow-y-auto   h-svh mt-0">
 
 
-                    <ul className="flex-1 text-sm font-medium  space-y-[3px]  ">
+                    <ul className="flex-1 text-sm font-normal  space-y-[3px]  ">
 
                          {links}
 

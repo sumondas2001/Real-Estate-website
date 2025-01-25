@@ -16,8 +16,18 @@ import BlogDetails from "../Shared/BlogDetails/BlogDetails";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
 import Login from "../Pages/Login/Login";
 import AdminDashBoard from "../AdminDashBoard/AdminDashBoard";
-import DashBoardLayOut from "../AdminDashBoard/DashBoardLayOut/DashBoardLayOut";
-import AdminSlider from "../AdminDashBoard/AdminSlider/AdminSlider";
+
+import SliderSection from "../AdminDashBoard/HomePage/SliderSection/SliderSection";
+import AboutSection from "../AdminDashBoard/HomePage/AboutSection/AboutSection";
+import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
+import PortfolioFirst from "../AdminDashBoard/HomePage/PortfolioSection/PortfolioFirst";
+import PortfolioSecond from "../AdminDashBoard/HomePage/PortfolioSection/PortfolioSecond ";
+import HeroSection from "../AdminDashBoard/AboutPages/HeroSection/HeroSection";
+import AboutUsSection from "../AdminDashBoard/AboutPages/AboutUsSection/AboutUsSection";
+import AchievementsCountsSection from "../AdminDashBoard/AboutPages/achievementsCountsSection/achievementsCountsSection";
+import OurMissionSection from "../AdminDashBoard/AboutPages/OurMissionSection/OurMissionSection";
+import OurVisionSection from "../AdminDashBoard/AboutPages/OurVisionSection/OurVisionSection";
+import ImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/ImgGallerySection";
 
 
 const router = createBrowserRouter([
@@ -92,7 +102,7 @@ const router = createBrowserRouter([
           ]
      },
 
-     // Admin panel 
+     // Admin panel start
      {
           path: '/admin-dashBoard',
           element: <AdminDashBoard />,
@@ -101,18 +111,56 @@ const router = createBrowserRouter([
                     path: '/admin-dashBoard',
                     element: <div><h1>dash Board</h1></div>
                },
+               // Home pages all section
                {
-                    path: 'admin-slider',
-                    element: <div><h1>admin slider</h1></div>
+                    path: 'home-slider',
+                    element: <SliderSection />
                },
                {
-                    path: 'admin-slider-2',
-                    element: <div><h1>admin slider2</h1></div>
+                    path: 'home-about',
+                    element: <AboutSection />
                },
                {
-                    path: 'admin-aboutUs',
-                    element: <div><h1>admin aboutUs</h1></div>
-               }
+                    path: 'home-banner',
+                    element: <BannerSection />
+               },
+               {
+                    path: 'home-video',
+                    element: <BannerSection />
+               },
+               {
+                    path: 'home-portfolio-1',
+                    element: <PortfolioFirst />
+               },
+               {
+                    path: 'home-portfolio-2',
+                    element: <PortfolioSecond />
+               },
+               // About pages all section 
+               {
+                    path: 'about-hero',
+                    element: <HeroSection />
+               },
+               {
+                    path: 'about-aboutUs',
+                    element: <AboutUsSection />
+               },
+               {
+                    path: 'about-achievementsCounts',
+                    element: <AchievementsCountsSection />
+               },
+               {
+                    path: 'about-ourMission',
+                    element: <OurMissionSection />
+               },
+               {
+                    path: 'about-ourVision',
+                    element: <OurVisionSection />
+               },
+               {
+                    path: 'about-imgGallery',
+                    element: <ImgGallerySection />
+               },
           ]
      }
 ]);
