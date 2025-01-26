@@ -28,7 +28,20 @@ import AchievementsCountsSection from "../AdminDashBoard/AboutPages/achievements
 import OurMissionSection from "../AdminDashBoard/AboutPages/OurMissionSection/OurMissionSection";
 import OurVisionSection from "../AdminDashBoard/AboutPages/OurVisionSection/OurVisionSection";
 import ImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/ImgGallerySection";
-
+import PropertyHeroSection from "../AdminDashBoard/PropertyPages/PropertyHeroSection/PropertyHeroSection";
+import PropertySection from "../AdminDashBoard/PropertyPages/PropertySection/PropertySection";
+import BlogHeroSection from "../AdminDashBoard/BlogPages/BlogHeroSection/BlogHeroSection";
+import BlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/BlogsSection";
+import CareerHeroSection from "../AdminDashBoard/CareerPages/CareerHeroSection/CareerHeroSection";
+import CareerSection from "../AdminDashBoard/CareerPages/CareerAbout/CareerAbout";
+import CareerFormSection from "../AdminDashBoard/CareerPages/CareerFormSection/CareerFormSection";
+import CareerDepartmentsSection from "../AdminDashBoard/CareerPages/CareerDepartmentsSection/CareerDepartmentsSection";
+import CustomerFromSection from "../AdminDashBoard/contactUsPages/CustomerFromSection/CustomerFromSection";
+import LandOwnerFromSection from "../AdminDashBoard/contactUsPages/LandOwnerFromSection/LandOwnerFromSection";
+import AddressSection from "../AdminDashBoard/contactUsPages/AddressSection/AddressSection";
+import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHeroSection/contactUsHeroSection";
+import BlogDetailsHeroSection from "../AdminDashBoard/BlogPages/BlogDetailsHeroSection/BlogDetailsHeroSection";
+import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
 
 const router = createBrowserRouter([
      {
@@ -160,6 +173,66 @@ const router = createBrowserRouter([
                {
                     path: 'about-imgGallery',
                     element: <ImgGallerySection />
+               },
+               // Property pages all section
+               {
+                    path: 'property-hero',
+                    element: <PropertyHeroSection />
+               },
+               {
+                    path: 'property-section',
+                    element: <PropertySection />
+               },
+               {
+                    path: 'property-details-hero',
+                    element: <PropertyDetailsHeroSection />
+               },
+               // Blog pages all section
+               {
+                    path: 'blog-hero',
+                    element: <BlogHeroSection />
+               },
+               {
+                    path: 'blog-section',
+                    element: <BlogsSection />
+               },
+               {
+                    path: 'blog-details-hero',
+                    element: <BlogDetailsHeroSection />
+               },
+               // career pages all section
+               {
+                    path: 'career-hero',
+                    element: <CareerHeroSection />
+               },
+               {
+                    path: 'career-about',
+                    element: <CareerSection />
+               },
+               {
+                    path: 'career-form',
+                    element: <CareerFormSection />
+               },
+               {
+                    path: 'career-departments',
+                    element: <CareerDepartmentsSection />
+               },
+               // contacts us pages all section
+               {
+                    path: 'contactsUs-hero',
+                    element: <ContactUsHeroSection />
+               },
+               {
+                    path: 'contactsUs-customer-from',
+                    element: <CustomerFromSection />
+               },
+               {
+                    path: 'contactsUs-landOwner-from',
+                    element: <LandOwnerFromSection />
+               },
+               {
+                    path: 'contactsUs-address',
+                    element: <AddressSection />
                },
           ]
      }
