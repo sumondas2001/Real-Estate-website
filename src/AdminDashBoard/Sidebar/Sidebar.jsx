@@ -1,12 +1,16 @@
 import { NavLink } from "react-router-dom";
-// import { RxDashboard } from "react-icons/rx";
 import { VscSearch } from "react-icons/vsc";
 import logo from '../../assets/logo/Gold_Black_Modern_Real_Estate_Logo-removebg-preview.png';
 import { useContext, useState } from "react";
-import { AiOutlineUp, AiOutlineDown } from "react-icons/ai";
 import { ToggleSideBarContext } from "../ToggleProvider/ToggleProvider";
 import { TfiClose, TfiAlignJustify } from "react-icons/tfi";
-
+import { RxChevronUp } from "react-icons/rx";
+import { IoChevronDownOutline, IoHomeOutline } from "react-icons/io5";
+import { MdOutlineDashboard } from "react-icons/md";
+import { BsBuildings } from "react-icons/bs";
+import { FaCommentDots, FaDesktop } from "react-icons/fa6";
+import { BiSupport } from "react-icons/bi";
+import { FaUserGraduate, FaAddressCard } from "react-icons/fa";
 const Sidebar = () => {
      const [isHomeDropdownOpen, setIsHomeDropdownOpen] = useState(false);
      const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
@@ -15,7 +19,6 @@ const Sidebar = () => {
      const [isCareerDropdownOpen, setIsCareerDropdownOpen] = useState(false);
      const [isContactUsDropdownOpen, setIsContactUsDropdownOpen] = useState(false);
      const [isHeroDropdownOpen, setIsHeroDropdownOpen] = useState(false);
-
 
      const { handelToggleSidebar, isOpen } = useContext(ToggleSideBarContext);
 
@@ -32,26 +35,33 @@ const Sidebar = () => {
                               }`
                          }
                     >
-                         Dashboard
+                         <div className="flex items-center gap-3">
+                              <span className="text-lg"><MdOutlineDashboard /></span>
+                              <span>Dashboard</span>
+                         </div>
                     </NavLink>
                </li>
+
                {/* Home pages all section */}
                <li>
                     <button
                          onClick={() => setIsHomeDropdownOpen(!isHomeDropdownOpen)}
                          className="w-full flex items-center font-medium justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span className="">Home</span>
+                         <div className="flex items-center  gap-3">
+                              <span className="text-lg"><IoHomeOutline /></span>
+                              <span>Home</span>
+                         </div>
                          {isHomeDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
                     {/* Dropdown Links */}
                     {isHomeDropdownOpen && (
-                         <ul className="ml-4 space-y-1 mt-1">
+                         <ul className="ml-4  space-y-1 mt-1">
                               {/* home pages slider section */}
                               <li>
                                    <NavLink
@@ -139,11 +149,14 @@ const Sidebar = () => {
                          onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
                          className="w-full flex items-center font-medium justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>About</span>
+                         <div className="flex items-center gap-3">
+                              <span className="text-lg"><FaAddressCard /></span>
+                              <span>About</span>
+                         </div>
                          {isAboutDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
@@ -224,11 +237,14 @@ const Sidebar = () => {
                          onClick={() => setIsPropertyDropdownOpen(!isPropertyDropdownOpen)}
                          className="w-full flex items-center font-medium justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>Property</span>
+                         <div className="flex gap-3 items-center">
+                              <span> <BsBuildings className="text-lg" /></span>
+                              <span>Property</span>
+                         </div>
                          {isPropertyDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
@@ -271,11 +287,14 @@ const Sidebar = () => {
                          onClick={() => setIsBlogDropdownOpen(!isBlogDropdownOpen)}
                          className="w-full font-medium flex items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>Blog</span>
+                         <div className="flex items-center gap-3">
+                              <span><FaCommentDots className="text-lg" /></span>
+                              <span>Blog</span>
+                         </div>
                          {isBlogDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
@@ -317,11 +336,14 @@ const Sidebar = () => {
                          onClick={() => setIsCareerDropdownOpen(!isCareerDropdownOpen)}
                          className="w-full flex font-medium items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>Career</span>
+                         <div className="flex items-center gap-3">
+                              <span>   <FaUserGraduate className="text-lg" /></span>
+                              <span>Career</span>
+                         </div>
                          {isCareerDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
@@ -376,11 +398,14 @@ const Sidebar = () => {
                          onClick={() => setIsContactUsDropdownOpen(!isContactUsDropdownOpen)}
                          className="w-full font-medium flex items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>Contact Us</span>
+                         <div className="flex gap-3 items-center">
+                              <span> <BiSupport className="text-lg" /></span>
+                              <span>Contact Us</span>
+                         </div>
                          {isContactUsDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
@@ -438,11 +463,14 @@ const Sidebar = () => {
                          onClick={() => setIsHeroDropdownOpen(!isHeroDropdownOpen)}
                          className="w-full font-medium flex items-center justify-between px-4 py-2 hover:bg-slate-900"
                     >
-                         <span>Hero Section</span>
+                         <div className="flex items-center gap-3">
+                              <span>   <FaDesktop className="text-lg" /></span>
+                              <span>Hero Section</span>
+                         </div>
                          {isHeroDropdownOpen ? (
-                              <AiOutlineUp className="text-lg" />
+                              <RxChevronUp className="size-5" />
                          ) : (
-                              <AiOutlineDown className="text-lg" />
+                              <IoChevronDownOutline className="size-5" />
                          )}
                     </button>
 
@@ -550,8 +578,8 @@ const Sidebar = () => {
      return (
           isOpen && (
                <div
-                    className={`${isOpen ? "absolute lg:static" : "lg:static relative"
-                         } bg-dashboardColor w-64 h-screen px-4 pt-2 pb-3 flex flex-col`}
+                    className={`${isOpen ? "absolute lg:static" : "lg:static relative "
+                         } bg-dashboardColor z-10 w-64 h-screen px-4 pt-2 pb-3 flex flex-col`}
                >
                     {/* Header Section */}
                     <div className="flex-1">
@@ -588,7 +616,7 @@ const Sidebar = () => {
 
                     {/* Links Section */}
                     <div className="overflow-y-auto h-svh mt-0">
-                         <ul className="flex-1 text-sm font-normal space-y-[3px]">{links}</ul>
+                         <ul className="flex-1  text-sm font-normal space-y-[3px]">{links}</ul>
                     </div>
                </div>
           )

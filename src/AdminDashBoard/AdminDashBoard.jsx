@@ -7,21 +7,23 @@ import ToggleProvider from "./ToggleProvider/ToggleProvider";
 const AdminDashBoard = () => {
      return (
           <ToggleProvider>
-               <div className=" flex flex-row overflow-hidden h-screen w-screen">
-                    <PagesTitle title={'DashBoard'} />
-                    <div className="">
+               <div className="flex flex-row h-screen w-screen overflow-hidden">
+                    <PagesTitle title={"DashBoard"} />
+
+                    {/* Sidebar */}
+                    <div className="flex-shrink-0">
                          <Sidebar />
                     </div>
-                    <div className="w-full  ">
+
+                    {/* Main Content */}
+                    <div className="w-full flex flex-col">
                          <Header />
-                         <div className="ml-10 h-screen" >
+
+                         {/* Scrollable Outlet */}
+                         <div className="flex-1 overflow-y-auto p-4">
                               <Outlet />
                          </div>
                     </div>
-
-
-
-
                </div>
           </ToggleProvider>
      );

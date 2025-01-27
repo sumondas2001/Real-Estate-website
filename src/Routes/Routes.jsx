@@ -16,7 +16,6 @@ import BlogDetails from "../Shared/BlogDetails/BlogDetails";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
 import Login from "../Pages/Login/Login";
 import AdminDashBoard from "../AdminDashBoard/AdminDashBoard";
-
 import SliderSection from "../AdminDashBoard/HomePage/SliderSection/SliderSection";
 import AboutSection from "../AdminDashBoard/HomePage/AboutSection/AboutSection";
 import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
@@ -42,6 +41,7 @@ import AddressSection from "../AdminDashBoard/contactUsPages/AddressSection/Addr
 import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHeroSection/contactUsHeroSection";
 import BlogDetailsHeroSection from "../AdminDashBoard/BlogPages/BlogDetailsHeroSection/BlogDetailsHeroSection";
 import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
+import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
 
 const router = createBrowserRouter([
      {
@@ -122,7 +122,7 @@ const router = createBrowserRouter([
           children: [
                {
                     path: '/admin-dashBoard',
-                    element: <div><h1>dash Board</h1></div>
+                    element: <DashBoard />
                },
                // Home pages all section
                {
@@ -233,6 +233,10 @@ const router = createBrowserRouter([
                {
                     path: 'contactsUs-address',
                     element: <AddressSection />
+               },
+               {
+                    path: 'isActive',
+                    element: <h1>is active</h1>
                },
           ]
      }
