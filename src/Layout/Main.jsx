@@ -36,7 +36,7 @@ const Main = () => {
      //      return () => lenis.destroy()
      // }, [])
      return (
-          <div className="font-Playfair">
+          <div className="font-Playfair bg-black">
                <Navbar></Navbar>
                <Outlet></Outlet>
                <Footer></Footer>

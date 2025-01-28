@@ -1,0 +1,15 @@
+.editor-with-toolbar .ql-toolbar {
+     position: sticky;
+     top: 0;
+     z-index: 10;
+     /* Ensure toolbar stays on top of content */
+     background: white;
+     /* Ensure toolbar background is visible */
+}
+
+.editor-with-toolbar .ql-container {
+     max-height: 200px;
+     /* Set a maximum height for the editor content */
+     overflow-y: auto;
+     /* Enable vertical scrolling */
+}

@@ -606,17 +606,17 @@ const Sidebar = () => {
                          <div className="mt-2 relative">
                               <input
                                    type="text"
-                                   className="my-3 bg-slate-900 px-3 w-full text-sm py-2 rounded-lg"
+                                   className="my-3 bg-slate-900 text-white px-3 w-full text-sm py-2 rounded-lg"
                                    placeholder="Search in menu"
                                    name="search"
                               />
-                              <VscSearch className="absolute bottom-5 right-2 opacity-50" />
+                              <VscSearch className="absolute text-white bottom-5 right-2 opacity-50" />
                          </div>
                     </div>
 
                     {/* Links Section */}
                     <div className="overflow-y-auto h-svh mt-0">
-                         <ul className="flex-1  text-sm font-normal space-y-[3px]">{links}</ul>
+                         <ul className="flex-1 text-white  text-sm font-normal space-y-[3px]">{links}</ul>
                     </div>
                </div>
           )

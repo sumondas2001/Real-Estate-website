@@ -14,7 +14,7 @@ const Header = () => {
      };
 
      return (
-          <div className="flex justify-between pr-10 pl-2 py-3 bg-dashboardColor">
+          <div className="flex justify-between pr-10 pl-2 py-3  bg-dashboardColor text-white">
                {/* Left Section */}
                <div className="flex items-center gap-4">
                     {/* Toggle Sidebar Button */}
