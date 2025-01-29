@@ -4,7 +4,7 @@ const PortfolioFirst = () => {
      const [titleData, setTitleData] = useState({ title: "", subTitle: "", imgURL: "" });
      console.log(titleData);
      // Handle form submission
-     const handleAboutForm = (e) => {
+     const handlePortfolioForm = (e) => {
           e.preventDefault();
           const form = e.target;
           const title = form.title.value;
@@ -20,7 +20,7 @@ const PortfolioFirst = () => {
                <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
                     <h1 className="text-xl font-medium text-center">Portfolio Information -1</h1>
                     <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
-                         <form onSubmit={handleAboutForm} className="pb-10 pt-6 space-y-6">
+                         <form onSubmit={handlePortfolioForm} className="pb-10 pt-6 space-y-6">
                               {/* Title Field */}
                               <div className="flex items-center justify-center">
                                    <div className="lg:w-1/6 w-1/3">

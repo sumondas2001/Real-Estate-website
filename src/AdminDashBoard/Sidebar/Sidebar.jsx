@@ -89,7 +89,7 @@ const Sidebar = () => {
                                    </NavLink>
                               </li>
                               {/* home pages banner section */}
-                              <li>
+                              {/* <li>
                                    <NavLink
                                         to="/admin-dashBoard/home-banner"
                                         end
@@ -100,18 +100,18 @@ const Sidebar = () => {
                                    >
                                         Banner
                                    </NavLink>
-                              </li>
+                              </li> */}
                               {/* home pages video section */}
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/home-video"
+                                        to="/admin-dashBoard/home-video-and-banner"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Video
+                                        Video And Banner
                                    </NavLink>
                               </li>
                               {/* home pages portfolio-1 section */}
