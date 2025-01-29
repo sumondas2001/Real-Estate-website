@@ -7,8 +7,7 @@ const AboutSection = () => {
      const [value, setValue] = useState(""); // To store ReactQuill content
      const [titleData, setTitleData] = useState({ title: "", subTitle: "" }); // To 
      console.log(titleData);
-     // store title data
-     const [formData, setFormData] = useState(null); // To store combined form data for UI display
+
 
      // Define the modules object for ReactQuill
      const modules = {
@@ -38,11 +37,9 @@ const AboutSection = () => {
           const subTitle = form.subTitle.value;
 
           // Update title data
-          const updatedTitleData = { title, subTitle };
+          const updatedTitleData = { title, subTitle, value };
           setTitleData(updatedTitleData);
 
-          // Combine form data
-          setFormData({ ...updatedTitleData, description: value });
      };
 
      return (
@@ -127,18 +124,7 @@ const AboutSection = () => {
                     </form>
                </div>
 
-               {/* Render the rich text content */}
-               {formData && (
-                    <div className="mt-8">
-                         <h2 className="text-lg font-medium">Preview</h2>
-                         <h3 className="text-xl font-semibold">{formData.title}</h3>
-                         <h4 className="text-lg text-gray-600">{formData.subTitle}</h4>
-                         <div
-                              className="bg-gray-100 p-4 rounded-md border"
-                              dangerouslySetInnerHTML={{ __html: formData.description }}
-                         ></div>
-                    </div>
-               )}
+
           </div>
      );
 };
