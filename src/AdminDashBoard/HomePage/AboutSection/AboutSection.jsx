@@ -5,7 +5,9 @@ import "react-quill/dist/quill.snow.css";
 import "./SherdTextEditor.css"
 const AboutSection = () => {
      const [value, setValue] = useState(""); // To store ReactQuill content
-     const [titleData, setTitleData] = useState({ title: "", subTitle: "" }); // To store title data
+     const [titleData, setTitleData] = useState({ title: "", subTitle: "" }); // To 
+     console.log(titleData);
+     // store title data
      const [formData, setFormData] = useState(null); // To store combined form data for UI display
 
      // Define the modules object for ReactQuill
@@ -45,7 +47,7 @@ const AboutSection = () => {
 
      return (
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
-               <h1 className="text-xl font-medium lg:py-6 text-center">About Information</h1>
+               <h1 className="text-xl font-medium  text-center">About Information</h1>
                <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
                     <form onSubmit={handleAboutForm} className="pb-10 pt-6 space-y-6">
                          {/* About Title Field */}
@@ -94,7 +96,7 @@ const AboutSection = () => {
                               <div className="lg:w-3/5 w-full">
                                    <div className="rounded-md border border-neutral-300">
                                         {/* Fixed Toolbar */}
-                                        <div className="quill-toolbar-wrapper">
+                                        <div className="quill-toolbar-wrapper ">
                                              <ReactQuill
                                                   theme="snow"
                                                   modules={modules} // Pass the modules here
@@ -114,10 +116,10 @@ const AboutSection = () => {
                          </div>
 
                          {/* Save Button */}
-                         <div className="flex justify-center">
+                         <div className="flex justify-center ">
                               <button
                                    type="submit"
-                                   className="py-2 px-4 bg-blue-600 text-white font-medium rounded-md shadow-md hover:bg-blue-700 focus:outline-none"
+                                   className="py-2 px-10  bg-blue-600 text-white font-medium rounded-md shadow-md hover:bg-blue-700 focus:outline-none"
                               >
                                    Save
                               </button>

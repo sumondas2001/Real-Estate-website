@@ -579,7 +579,7 @@ const Sidebar = () => {
           isOpen && (
                <div
                     className={`${isOpen ? "absolute lg:static" : "lg:static relative "
-                         } bg-dashboardColor z-10 w-64 h-screen px-4 pt-2 pb-3 flex flex-col`}
+                         } bg-dashboardColor z-50 w-64 h-screen px-4 pt-2 pb-3 flex flex-col`}
                >
                     {/* Header Section */}
                     <div className="flex-1">

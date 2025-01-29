@@ -42,6 +42,7 @@ import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHero
 import BlogDetailsHeroSection from "../AdminDashBoard/BlogPages/BlogDetailsHeroSection/BlogDetailsHeroSection";
 import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
 import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
+import VideoSection from "../AdminDashBoard/HomePage/VideoSection/VideoSection";
 
 const router = createBrowserRouter([
      {
@@ -139,7 +140,7 @@ const router = createBrowserRouter([
                },
                {
                     path: 'home-video',
-                    element: <BannerSection />
+                    element: <VideoSection />
                },
                {
                     path: 'home-portfolio-1',
