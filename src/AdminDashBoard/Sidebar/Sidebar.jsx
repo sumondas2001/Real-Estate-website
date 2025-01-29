@@ -163,6 +163,19 @@ const Sidebar = () => {
                     {/* Dropdown Links */}
                     {isAboutDropdownOpen && (
                          <ul className="ml-4 space-y-1 mt-1 ">
+                              {/* About pages  Hero section */}
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/about-hero"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Hero Section
+                                   </NavLink>
+                              </li>
                               {/* About pages  About Us section */}
                               <li>
                                    <NavLink
