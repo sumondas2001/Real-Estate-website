@@ -83,6 +83,7 @@ const OurVisionSection = () => {
                                                   style={{
                                                        height: "300px", // Set editor height
                                                        overflow: "auto", // Enable scrolling
+
                                                   }}
                                                   className="editor-with-toolbar"
                                              />

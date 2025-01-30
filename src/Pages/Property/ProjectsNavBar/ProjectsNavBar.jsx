@@ -4,7 +4,7 @@ const ProjectsNavBar = () => {
      return (
           <div className="space-y-6  py-10">
 
-               <div className="flex justify-start lg:gap-10 md:gap-6 gap-3 ">
+               <div className="flex justify-start text-white lg:gap-10 md:gap-6 gap-3 ">
                     <NavLink
                          to={'/property/all-projects'}
                          end
