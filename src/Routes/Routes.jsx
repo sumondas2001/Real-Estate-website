@@ -18,7 +18,6 @@ import Login from "../Pages/Login/Login";
 import AdminDashBoard from "../AdminDashBoard/AdminDashBoard";
 import SliderSection from "../AdminDashBoard/HomePage/SliderSection/SliderSection";
 import AboutSection from "../AdminDashBoard/HomePage/AboutSection/AboutSection";
-import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
 import PortfolioFirst from "../AdminDashBoard/HomePage/PortfolioSection/PortfolioFirst";
 import PortfolioSecond from "../AdminDashBoard/HomePage/PortfolioSection/PortfolioSecond ";
 import HeroSection from "../AdminDashBoard/AboutPages/HeroSection/HeroSection";
@@ -42,8 +41,8 @@ import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHero
 import BlogDetailsHeroSection from "../AdminDashBoard/BlogPages/BlogDetailsHeroSection/BlogDetailsHeroSection";
 import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
 import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
-import VideoSection from "../AdminDashBoard/HomePage/VideoSectionAndBannerSection/VideoSectionAndBannerSection";
-import VideoSectionAndBannerSection from "../AdminDashBoard/HomePage/VideoSectionAndBannerSection/VideoSectionAndBannerSection";
+import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
+import VideoSection from "../AdminDashBoard/HomePage/VideoSection/VideoSection";
 
 const router = createBrowserRouter([
      {
@@ -135,13 +134,13 @@ const router = createBrowserRouter([
                     path: 'home-about',
                     element: <AboutSection />
                },
-               // {
-               //      path: 'home-banner',
-               //      element: <BannerSection />
-               // },
                {
-                    path: 'home-video-and-banner',
-                    element: <VideoSectionAndBannerSection />
+                    path: 'home-banner',
+                    element: <BannerSection />
+               },
+               {
+                    path: 'home-video',
+                    element: <VideoSection />
                },
                {
                     path: 'home-portfolio-1',

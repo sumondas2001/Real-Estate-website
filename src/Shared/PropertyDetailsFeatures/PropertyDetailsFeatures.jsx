@@ -35,55 +35,55 @@ const PropertyDetailsFeatures = () => {
                     </div>
                     <div className="grid  lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10">
                          {/* High Speed Lifts */}
-                         <Link className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer ">
+                         <Link className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer ">
                               <PiElevator className="lg:text-5xl md:text-4xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">High Speed Lifts</h1>
                          </Link>
 
                          {/* Swimming Pool */}
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <LiaSwimmingPoolSolid className="lg:text-5xl md:text-4xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">Swimming Pool</h1>
                          </div>
 
                          {/* CCTV Monitoring System */}
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <GiCctvCamera className="lg:text-5xl md:text-4xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">CCTV Monitoring</h1>
                          </div>
 
                          {/* Gym */}
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <CgGym className="lg:text-5xl md:text-4xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">Gym</h1>
                          </div>
 
                          {/* 100% Power Backup */}
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <ImPower className="lg:text-5xl md:text-4xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">100% Power Backup</h1>
                          </div>
 
                          {/* Security Guard */}
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <MdOutlineSecurity className="lg:text-5xl md:text-5xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">24 Hours
                                    Security</h1>
                          </div>
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <FaCarTunnel className="lg:text-5xl md:text-5xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">Spacious  Parking</h1>
                          </div>
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <GiBullseye className="lg:text-5xl md:text-5xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">Kids Play
                                    Zone</h1>
                          </div>
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer" >
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer" >
                               <RiBuilding2Fill className="lg:text-5xl md:text-5xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">Modern Architecture</h1>
                          </div>
-                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor cursor-pointer">
+                         <div className="flex flex-col items-center space-y-2 hover:text-primaryColor text-white cursor-pointer">
                               <MdOutlineDeck className="lg:text-5xl md:text-5xl text-4xl " />
                               <h1 className="text-lg font-medium text-center">Rooftop Deck</h1>
                          </div>

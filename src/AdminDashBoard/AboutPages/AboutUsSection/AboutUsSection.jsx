@@ -1,23 +1,21 @@
-import { useState } from "react";
+import { useForm } from "react-hook-form";
 import ReactQuill from "react-quill";
+import { useState } from "react";
+
 
 const AboutUsSection = () => {
-     const [value, setValue] = useState(""); // To store ReactQuill content
-     const [titleData, setTitleData] = useState({ title: "", value: '', imgURL: "" }); // To 
-     console.log(titleData);
+     const { register,
+          handleSubmit,
+          setValue,
+          formState: { errors, isSubmitting }
+     } = useForm();
 
-
-     // Handle form submission
-     const handleAboutForm = (e) => {
-          e.preventDefault();
-          const form = e.target;
-          const title = form.title.value;
-          const imgFile = form.imgInput.files[0]; // Get the selected file
-
-          // Update title data
-          const updatedTitleData = { title, value, imgFile };
-          setTitleData(updatedTitleData);
-
+     // Track the ReactQuill editor content
+     const [editorContent, setEditorContent] = useState("");
+     // ReactQuill Change Handler
+     const handleEditorChange = (content) => {
+          setEditorContent(content);
+          setValue("description", content, { shouldValidate: true }); // Register with react-hook-form
      };
 
      // Define the modules object for ReactQuill
@@ -39,11 +37,14 @@ const AboutUsSection = () => {
                ["clean"], // Clear formatting
           ],
      };
+     const onSubmit = (data) => {
+          console.log(data);
+     }
      return (
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
                <h1 className="text-xl font-medium  text-center">About Us Information</h1>
                <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
-                    <form onSubmit={handleAboutForm} className="pb-10 pt-6 space-y-6">
+                    <form onSubmit={handleSubmit(onSubmit)} className="pb-10 pt-6 space-y-6">
                          {/* About Title Field */}
                          <div className="flex items-center justify-center">
                               <div className="lg:w-1/6 w-1/3">
@@ -56,9 +57,11 @@ const AboutUsSection = () => {
                                         className="w-full py-2 px-3 border border-neutral-400 focus:outline-none focus:border-blue-400 rounded-md"
                                         type="text"
                                         name="title"
-                                        required
+
+                                        {...register('title', { required: 'title field must be required' })}
                                         placeholder="About Title"
                                    />
+                                   {errors.title && <p className="text-sm text-red-400">{errors.imgInput.message}</p>}
                               </div>
                          </div>
 
@@ -78,14 +81,16 @@ const AboutUsSection = () => {
                                              <ReactQuill
                                                   theme="snow"
                                                   modules={modules} // Pass the modules here
-                                                  value={value}
-                                                  onChange={setValue}
+                                                  required
+                                                  value={editorContent}
+                                                  onChange={handleEditorChange}
                                                   style={{
                                                        height: "300px", // Set editor height
                                                        overflow: "auto", // Enable scrolling
                                                   }}
                                                   className="editor-with-toolbar"
                                              />
+                                             {errors.description && <p className="text-sm text-red-400">{errors.imgInput.message}</p>}
                                         </div>
                                    </div>
                               </div>
@@ -103,10 +108,11 @@ const AboutUsSection = () => {
                                    <div >
 
                                         <input type="file"
-                                             name="imgInput"
-                                             accept="image/*"
+
+                                             {...register('imgInput', { required: 'image  field must be required' })}
                                              className="file-input  file-input-accent w-full max-w-xs"
                                         />
+                                        {errors.imgInput && <p className="text-sm text-red-400">{errors.imgInput.message}</p>}
 
 
                                    </div>
@@ -115,12 +121,13 @@ const AboutUsSection = () => {
                          </div>
 
                          {/* Save Button */}
-                         <div className="flex justify-center ">
+                         <div className="flex justify-end mr-32">
                               <button
+                                   disabled={isSubmitting}
                                    type="submit"
-                                   className="py-2 px-10  bg-blue-600 text-white font-medium rounded-md shadow-md hover:bg-blue-700 focus:outline-none"
+                                   className="py-2 px-10 bg-blue-600 text-white font-medium rounded-md shadow-md focus:outline-none"
                               >
-                                   Save
+                                   {isSubmitting ? "Submitting" : "Submit"}
                               </button>
                          </div>
                     </form>

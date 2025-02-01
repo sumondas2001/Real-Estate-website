@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-const BannerSection = () => {
+const VideoSection = () => {
 
 
      const { register,
@@ -14,36 +14,37 @@ const BannerSection = () => {
 
      return (
           <div>
-
-               {/* banner section */}
+               {/* video section */}
                <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
-                    <h1 className="text-xl font-medium text-center">Banner Information</h1>
+                    <h1 className="text-xl font-medium text-center">Video Information</h1>
                     <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
                          <form onSubmit={handleSubmit(onSubmit)} className="pb-10 pt-6 space-y-6">
 
 
                               {/* File Input Field */}
-                              <div className="flex items-center justify-center">
+                              <div className="flex items-center gap-10 justify-center">
                                    <div className="lg:w-1/6 w-1/3">
                                         <label className="text-sm font-medium text-left block">
-                                             Upload Img <span className="text-red-600">*</span>
+                                             Video Link (must be come from Youtube) <span className="text-red-600">*</span>
                                         </label>
                                    </div>
                                    <div className="lg:w-3/5 w-full">
+                                        <div >
 
 
-                                        <input type="file"
-                                             {...register('imgInput', { required: 'Image field must be required' })}
+                                             <input
+                                                  className="w-full py-2 px-3 border border-neutral-400 focus:outline-none focus:border-blue-400 rounded-md"
+                                                  type="text"
 
-                                             className="file-input  file-input-accent w-full max-w-xs"
-                                        />
+                                                  {...register('videoLink', { required: 'video Link field must be required' })}
+                                                  placeholder="video Link"
+                                             />
+                                             {errors.title && <p className="text-sm text-red-400">{errors.videoLink.message}</p>}
 
-                                        {errors.title && <p className="text-sm text-red-400">{errors.imgInput.message}</p>}
-
+                                        </div>
 
                                    </div>
                               </div>
-
 
 
                               {/* Save Button */}
@@ -59,8 +60,9 @@ const BannerSection = () => {
                          </form>
                     </div>
                </div>
+
           </div>
      );
 };
 
-export default BannerSection;
+export default VideoSection;

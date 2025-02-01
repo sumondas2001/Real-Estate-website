@@ -1,13 +1,6 @@
-
-
-
 const AboutUs = () => {
-
-
      return (
-          <div
-
-          >
+          <div>
                <div
                     data-aos="fade-up"
                     data-aos-offset="100"

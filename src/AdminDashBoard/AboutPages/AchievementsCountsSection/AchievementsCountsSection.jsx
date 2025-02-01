@@ -65,14 +65,13 @@ const AchievementsCountsSection = () => {
 
 
                          {/* Save Button */}
-                         <div className="flex justify-end mr-32 ">
+                         <div className="flex justify-end mr-32">
                               <button
                                    disabled={isSubmitting}
-
                                    type="submit"
-                                   className="py-2 px-10  bg-blue-600 text-white font-medium rounded-md shadow-md  focus:outline-none"
+                                   className="py-2 px-10 bg-blue-600 text-white font-medium rounded-md shadow-md focus:outline-none"
                               >
-                                   {isSubmitting ? 'Submitting' : 'Submit'}
+                                   {isSubmitting ? "Submitting" : "Submit"}
                               </button>
                          </div>
                     </form>
