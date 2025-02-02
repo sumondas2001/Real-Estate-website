@@ -31,8 +31,6 @@ import PropertySection from "../AdminDashBoard/PropertyPages/PropertySection/Pro
 import BlogHeroSection from "../AdminDashBoard/BlogPages/BlogHeroSection/BlogHeroSection";
 import BlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/BlogsSection";
 import CareerHeroSection from "../AdminDashBoard/CareerPages/CareerHeroSection/CareerHeroSection";
-import CareerSection from "../AdminDashBoard/CareerPages/CareerAbout/CareerAbout";
-import CareerFormSection from "../AdminDashBoard/CareerPages/CareerFormSection/CareerFormSection";
 import CareerDepartmentsSection from "../AdminDashBoard/CareerPages/CareerDepartmentsSection/CareerDepartmentsSection";
 import AddressSection from "../AdminDashBoard/contactUsPages/AddressSection/AddressSection";
 import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHeroSection/contactUsHeroSection";
@@ -40,6 +38,7 @@ import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/Property
 import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
 import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
 import VideoSection from "../AdminDashBoard/HomePage/VideoSection/VideoSection";
+import CareerAbout from "../AdminDashBoard/CareerPages/CareerAbout/CareerAbout";
 
 const router = createBrowserRouter([
      {
@@ -202,12 +201,9 @@ const router = createBrowserRouter([
                },
                {
                     path: 'career-about',
-                    element: <CareerSection />
+                    element: <CareerAbout />
                },
-               {
-                    path: 'career-form',
-                    element: <CareerFormSection />
-               },
+
                {
                     path: 'career-departments',
                     element: <CareerDepartmentsSection />

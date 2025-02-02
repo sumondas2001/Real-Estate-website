@@ -364,19 +364,7 @@ const Sidebar = () => {
                                         About
                                    </NavLink>
                               </li>
-                              {/* Career pages career form section */}
-                              <li>
-                                   <NavLink
-                                        to="/admin-dashBoard/career-form"
-                                        end
-                                        className={({ isActive, isPending }) =>
-                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
-                                             }`
-                                        }
-                                   >
-                                        Form
-                                   </NavLink>
-                              </li>
+
                               {/* Career pages departments section */}
                               <li>
                                    <NavLink
