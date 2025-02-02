@@ -34,11 +34,8 @@ import CareerHeroSection from "../AdminDashBoard/CareerPages/CareerHeroSection/C
 import CareerSection from "../AdminDashBoard/CareerPages/CareerAbout/CareerAbout";
 import CareerFormSection from "../AdminDashBoard/CareerPages/CareerFormSection/CareerFormSection";
 import CareerDepartmentsSection from "../AdminDashBoard/CareerPages/CareerDepartmentsSection/CareerDepartmentsSection";
-import CustomerFromSection from "../AdminDashBoard/contactUsPages/CustomerFromSection/CustomerFromSection";
-import LandOwnerFromSection from "../AdminDashBoard/contactUsPages/LandOwnerFromSection/LandOwnerFromSection";
 import AddressSection from "../AdminDashBoard/contactUsPages/AddressSection/AddressSection";
 import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHeroSection/contactUsHeroSection";
-import BlogDetailsHeroSection from "../AdminDashBoard/BlogPages/BlogDetailsHeroSection/BlogDetailsHeroSection";
 import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
 import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
 import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
@@ -197,10 +194,7 @@ const router = createBrowserRouter([
                     path: 'blog-section',
                     element: <BlogsSection />
                },
-               {
-                    path: 'blog-details-hero',
-                    element: <BlogDetailsHeroSection />
-               },
+
                // career pages all section
                {
                     path: 'career-hero',
@@ -223,22 +217,12 @@ const router = createBrowserRouter([
                     path: 'contactsUs-hero',
                     element: <ContactUsHeroSection />
                },
-               {
-                    path: 'contactsUs-customer-from',
-                    element: <CustomerFromSection />
-               },
-               {
-                    path: 'contactsUs-landOwner-from',
-                    element: <LandOwnerFromSection />
-               },
+
                {
                     path: 'contactsUs-address',
                     element: <AddressSection />
                },
-               {
-                    path: 'isActive',
-                    element: <h1>is active</h1>
-               },
+
           ]
      }
 ]);

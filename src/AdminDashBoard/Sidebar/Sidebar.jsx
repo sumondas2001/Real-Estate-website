@@ -413,34 +413,8 @@ const Sidebar = () => {
                     {/* Dropdown Links */}
                     {isContactUsDropdownOpen && (
                          <ul className="ml-4 space-y-1 mt-1">
-                              {/* contacts Us pagers Customer section*/}
 
-                              <li>
-                                   <NavLink
-                                        to="/admin-dashBoard/contactsUs-customer-from"
-                                        end
-                                        className={({ isActive, isPending }) =>
-                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
-                                             }`
-                                        }
-                                   >
-                                        Customer Message
-                                   </NavLink>
-                              </li>
-                              {/* contacts Us pagers Land Owner section*/}
 
-                              <li>
-                                   <NavLink
-                                        to="/admin-dashBoard/contactsUs-landOwner-from"
-                                        end
-                                        className={({ isActive, isPending }) =>
-                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
-                                             }`
-                                        }
-                                   >
-                                        Land Owner Message
-                                   </NavLink>
-                              </li>
                               {/* contacts Us pagers address section*/}
                               <li>
                                    <NavLink
@@ -543,19 +517,7 @@ const Sidebar = () => {
                                         Contact Us Hero
                                    </NavLink>
                               </li>
-                              {/* Blog Details Hero Section */}
-                              <li>
-                                   <NavLink
-                                        to="/admin-dashBoard/blog-details-hero"
-                                        end
-                                        className={({ isActive, isPending }) =>
-                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
-                                             }`
-                                        }
-                                   >
-                                        Blog Details Hero
-                                   </NavLink>
-                              </li>
+
                               {/* Property Details Hero Section */}
                               <li>
                                    <NavLink

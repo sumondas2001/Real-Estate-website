@@ -113,7 +113,7 @@ const OurVisionSection = () => {
                                              className="file-input  file-input-accent  w-full max-w-xs"
                                         />
 
-                                        {errors.imgField && <p className="text-sm text-red-400">{errors.imgInput.message}</p>}
+                                        {errors.imgField && <p className="text-sm text-red-400">{errors.imgField.message}</p>}
                                    </div>
 
                               </div>

@@ -1,19 +1,19 @@
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 
 const CustomerFrom = () => {
-     const handelCustomerFrom = (event) => {
-          event.preventDefault();
-          const from = event.target;
-          const name = from.name.value;
-          const email = from.email.value;
-          const contactsNumber = from.contactsNumber.value;
-          const size = from.size.value;
-          const location = from.location.value;
-          const messages = from.messages.value;
-          console.log(name, email, contactsNumber, size, location, messages);
-          toast.success('Your Messages Submit Successfully');
-          from.reset();
-     }
+     // const handelCustomerFrom = (event) => {
+     //      event.preventDefault();
+     //      const from = event.target;
+     //      const name = from.name.value;
+     //      const email = from.email.value;
+     //      const contactsNumber = from.contactsNumber.value;
+     //      const size = from.size.value;
+     //      const location = from.location.value;
+     //      const messages = from.messages.value;
+     //      console.log(name, email, contactsNumber, size, location, messages);
+     //      toast.success('Your Messages Submit Successfully');
+     //      from.reset();
+     // }
      return (
           <div
                data-aos="fade-up"
@@ -24,7 +24,8 @@ const CustomerFrom = () => {
 
                className="py-16 bg-black lg:px-10 md:px-10  ">
                <h1 className="text-xl mb-4 text-primaryColor">Give your details here</h1>
-               <form onSubmit={handelCustomerFrom} className="lg:space-y-9 md:space-y-8 space-y-6">
+               <form action="https://formspree.io/f/meoekkpa"
+                    method="POST" className="lg:space-y-9 md:space-y-8 space-y-6">
                     <div className="flex lg:flex-row md:flex-row flex-col gap-6">
                          <input
                               type="text"
