@@ -8,7 +8,8 @@ import "aos/dist/aos.css";
 import { Toaster } from "react-hot-toast";
 import AOS from 'aos';
 const Main = () => {
-     const { pathname } = useLocation();
+     const pathname = useLocation();
+
 
      useEffect(() => {
           AOS.init();
@@ -16,7 +17,7 @@ const Main = () => {
 
      useEffect(() => {
           window.scrollTo(0, 0);
-     }, [pathname]);
+     }, [pathname.pathname]);
 
      // useEffect(() => {
      //      const lenis = new Lenis({

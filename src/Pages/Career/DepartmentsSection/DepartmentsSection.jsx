@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Department from "./Department";
 
+
+
 const DepartmentsSection = () => {
      const [departments, setDepartments] = useState([])
      useEffect(() => {
