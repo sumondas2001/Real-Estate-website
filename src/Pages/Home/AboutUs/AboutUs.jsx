@@ -25,7 +25,7 @@ const AboutUs = () => {
                                    <hr className='w-20 md:hidden hidden lg:block  border-[1px] border-primaryColor' />
                                    <h1 className="lg:text-xl  font-normal text-primaryColor">The Highest Horizon Of Luxury</h1>
                               </div>
-                              <h1 className="lg:text-4xl md:text-3xl text-xl font-medium">The Highest Horizon Of Luxury</h1>
+                              <h1 className="lg:text-4xl md:text-3xl text-xl text-white font-medium">The Highest Horizon Of Luxury</h1>
                          </div>
                          <div
 

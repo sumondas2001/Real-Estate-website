@@ -10,7 +10,7 @@ const ContactFromNavbar = () => {
                data-aos-easing="ease-out-cubic"
 
                className="space-y-6 mt-20 bg-secondaryColor py-10">
-               <h1 className="text-3xl font-semibold text-center">Contact Us</h1>
+               <h1 className="text-3xl font-semibold text-white text-center">Contact Us</h1>
                <div className="flex justify-center gap-10">
                     <NavLink
                          to={'/contactUs/customerFrom'}
@@ -18,7 +18,7 @@ const ContactFromNavbar = () => {
                          className={({ isActive }) =>
                               isActive
                                    ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium '
-                                   : 'border-2 px-3 py-2 hover:text-primaryColor hover:border-primaryColor'
+                                   : 'border-2 px-3 text-white py-2 hover:text-primaryColor hover:border-primaryColor'
                          }
                     >
                          Customer
@@ -29,7 +29,7 @@ const ContactFromNavbar = () => {
                          className={({ isActive }) =>
                               isActive
                                    ? 'border-2 border-black py-2 px-3 bg-primaryColor text-secondaryColor font-medium'
-                                   : 'border-2 px-3 py-2'
+                                   : 'border-2 px-3 text-white py-2 hover:text-primaryColor hover:border-primaryColor'
                          }
                     >
                          Land Owner

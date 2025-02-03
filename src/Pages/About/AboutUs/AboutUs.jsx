@@ -16,7 +16,7 @@ const AboutUs = () => {
                          data-aos-easing="ease-out-cubic"
 
                          className="lg:w-1/2 md:w-full w-full space-y-10">
-                         <h1 className="lg:text-5xl md:text-3xl text-2xl lg:text-start text-center font-medium text-white">A Legacy Written in Concrete</h1>
+                         <h1 className="lg:text-5xl md:text-3xl text-2xl lg:text-start text-center font-medium text-primaryColor">A Legacy Written in Concrete</h1>
                          <p className="text-base text-justify lg:text-start font-normal text-white">
                               {
                                    description.slice(0, 970)
@@ -35,7 +35,7 @@ const AboutUs = () => {
                          <div
 
                               className="flex justify-end">
-                              <img className="object-cover w-full  h-[550px]" src={img} alt="" />
+                              <img className="object-cover w-full h-[550px] lg:h-[600px]" src={img} alt="" />
                          </div>
                          <div
 

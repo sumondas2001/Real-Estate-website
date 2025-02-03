@@ -31,10 +31,10 @@ import PropertySection from "../AdminDashBoard/PropertyPages/PropertySection/Pro
 import BlogHeroSection from "../AdminDashBoard/BlogPages/BlogHeroSection/BlogHeroSection";
 import BlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/BlogsSection";
 import CareerHeroSection from "../AdminDashBoard/CareerPages/CareerHeroSection/CareerHeroSection";
-import CareerDepartmentsSection from "../AdminDashBoard/CareerPages/CareerDepartmentsSection/CareerDepartmentsSection";
+// import CareerDepartmentsSection from "../AdminDashBoard/CareerPages/CareerDepartmentsSection/CareerDepartmentsSection";
 import AddressSection from "../AdminDashBoard/contactUsPages/AddressSection/AddressSection";
 import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHeroSection/contactUsHeroSection";
-import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
+// import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
 import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
 import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
 import VideoSection from "../AdminDashBoard/HomePage/VideoSection/VideoSection";
@@ -180,10 +180,10 @@ const router = createBrowserRouter([
                     path: 'property-section',
                     element: <PropertySection />
                },
-               {
-                    path: 'property-details-hero',
-                    element: <PropertyDetailsHeroSection />
-               },
+               // {
+               //      path: 'property-details-hero',
+               //      element: <PropertyDetailsHeroSection />
+               // },
                // Blog pages all section
                {
                     path: 'blog-hero',
@@ -204,16 +204,15 @@ const router = createBrowserRouter([
                     element: <CareerAbout />
                },
 
-               {
-                    path: 'career-departments',
-                    element: <CareerDepartmentsSection />
-               },
+               // {
+               //      path: 'career-departments',
+               //      element: <CareerDepartmentsSection />
+               // },
                // contacts us pages all section
                {
                     path: 'contactsUs-hero',
                     element: <ContactUsHeroSection />
                },
-
                {
                     path: 'contactsUs-address',
                     element: <AddressSection />

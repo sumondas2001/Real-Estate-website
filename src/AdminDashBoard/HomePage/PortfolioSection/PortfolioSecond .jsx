@@ -68,7 +68,11 @@ const PortfolioSecond = () => {
 
                                              className="file-input  file-input-accent w-full max-w-xs"
                                         />
-                                        {errors.description && <p className="text-sm text-red-400">{errors.title.message}</p>}
+                                        {errors.description && <p className="text-sm  text-red-400">{errors.title.message}</p>}
+
+                                        <div className="mt-1">
+                                             <span className="text-xs font-normal">Image Size Must be (800*400)</span>
+                                        </div>
 
                                    </div>
 

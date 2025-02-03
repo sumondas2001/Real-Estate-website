@@ -18,7 +18,7 @@ const ArchitecturalElementSection1 = () => {
                className="flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-between  mt-20">
                <div className=''>
 
-                    <img className="lg:w-[800px] class p-2 md:w-full w-full lg:h-[390px] md:h-56 h-44  object-cover"
+                    <img className="lg:w-[800px] class p-2 md:w-full w-full lg:h-[400px] md:h-56 h-44  object-cover"
 
                          src="https://rancondevelopments.com/media/images/rdl_website_home-3_9R0Glhr.2e16d0ba.fill-1280x853-c100.jpg" alt="" />
                </div>

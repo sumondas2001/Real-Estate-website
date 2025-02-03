@@ -19,7 +19,7 @@ const BlogCard = ({ blog }) => {
 
                <div className="px-4">
 
-                    <h1 className="text-base font-medium">{blogTitle}</h1>
+                    <h1 className="text-base font-medium text-primaryColor">{blogTitle}</h1>
                </div>
                <div className=" flex flex-grow px-4">
                     <Link to={`/blog-details/${id}`} className="mt-auto hover:bg-primaryColor font-medium text-white border hover:border-none px-8 py-2  hover:text-black">Explore</Link>

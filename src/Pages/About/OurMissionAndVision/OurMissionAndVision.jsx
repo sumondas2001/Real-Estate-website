@@ -48,7 +48,7 @@ const OurMissionAndVision = () => {
                          <img className="lg:h-96 md:h-80 h-72  w-full object-cover" src={ourMission?.img} alt="" />
                     </div>
                     <div className="lg:w-2/5 text-white lg:space-y-10 space-y-8 md:mb-14 lg:mb-0 mb-10">
-                         <h1 className="lg:text-4xl md:text-3xl text-3xl font-medium ">{ourMission?.title}</h1>
+                         <h1 className="lg:text-4xl md:text-3xl text-primaryColor text-3xl font-medium ">{ourMission?.title}</h1>
                          <p className="lg:text-lg text-base font-normal lg:w-96 lg:mx-auto">{ourMission?.description}</p>
                     </div>
                </div>
@@ -68,7 +68,7 @@ const OurMissionAndVision = () => {
                          />
                     </div>
                     <div className="flex flex-col md:mb-14 lg:mb-0 mb-10 lg:justify-end  mt-20 lg:w-2/5 lg:space-y-10 space-y-8 text-white  ">
-                         <h1 className="lg:text-4xl md:text-3xl text-3xl font-medium">{ourVision?.title}</h1>
+                         <h1 className="lg:text-4xl text-primaryColor md:text-3xl text-3xl font-medium">{ourVision?.title}</h1>
                          <p className="lg:text-lg text-base font-normal lg:w-96">{ourVision?.description}</p>
                     </div>
                </div>

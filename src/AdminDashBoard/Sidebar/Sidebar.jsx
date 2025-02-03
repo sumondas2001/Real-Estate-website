@@ -365,7 +365,7 @@ const Sidebar = () => {
                                    </NavLink>
                               </li>
 
-                              {/* Career pages departments section */}
+                              {/* Career pages departments section
                               <li>
                                    <NavLink
                                         to="/admin-dashBoard/career-departments"
@@ -377,7 +377,7 @@ const Sidebar = () => {
                                    >
                                         Departments
                                    </NavLink>
-                              </li>
+                              </li> */}
                          </ul>
                     )}
                </li>
@@ -506,7 +506,7 @@ const Sidebar = () => {
                                    </NavLink>
                               </li>
 
-                              {/* Property Details Hero Section */}
+                              {/* Property Details Hero Section
                               <li>
                                    <NavLink
                                         to="/admin-dashBoard/property-details-hero"
@@ -518,7 +518,7 @@ const Sidebar = () => {
                                    >
                                         Property Details Hero
                                    </NavLink>
-                              </li>
+                              </li> */}
                          </ul>
                     )}
                </li>

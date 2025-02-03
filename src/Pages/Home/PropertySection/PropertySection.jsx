@@ -24,8 +24,11 @@ const PropertySection = () => {
 
 
                     className="space-y-6 mt-10">
-                    <h1 className="text-3xl font-medium text-primaryColor">OurPerfections</h1>
-                    <p className="text-lg font-normal">Real Estate Sapphire Series represents our most luxurious and iconic projects in the most popular and sought-after locations. Experience elegance and comfort with our bold designs, top-tier construction, and premium finishes.</p>
+                    <div className="flex items-center gap-4">
+                         <hr className='w-20 md:hidden hidden lg:block  border-[1px] border-primaryColor' />
+                         <h1 className="text-3xl font-medium text-primaryColor">OurPerfections</h1>
+                    </div>
+                    <p className="text-lg font-normal text-white">Real Estate Sapphire Series represents our most luxurious and iconic projects in the most popular and sought-after locations. Experience elegance and comfort with our bold designs, top-tier construction, and premium finishes.</p>
                </div>
 
                {

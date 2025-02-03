@@ -213,7 +213,7 @@ const PropertySection = () => {
                               {/* Image Field */}
                               <div>
                                    <label className="text-sm font-medium block mb-1">
-                                        Property Image
+                                        Property Image <span className="text-red-600">*</span>
                                    </label>
                                    <input
                                         {...register('propertyImg', { required: true })}
@@ -222,6 +222,35 @@ const PropertySection = () => {
                                         placeholder="Property Img"
                                    />
                                    {errors.propertyImg && <p className='text-sm text-red-400'>Property Image filed must be is required</p>}
+                              </div>
+                              {/*property gallery  Image Field */}
+                              <div>
+                                   <label className="text-sm font-medium block mb-1">
+                                        Gallery Image
+                                   </label>
+                                   <input
+                                        {...register('galleryImg')}
+                                        className="w-full py-2 px-3 border border-neutral-400 focus:outline-none focus:border-blue-400 rounded-md"
+                                        type="file"
+                                        multiple
+                                        placeholder="Gallery Img"
+                                   />
+
+                              </div>
+                              {/*property details pages cover  Image Field */}
+                              <div>
+                                   <label className="text-sm font-medium block mb-1">
+                                        Property Details Cover Image <span className="text-red-600">*</span>
+                                   </label>
+                                   <input
+                                        {...register('galleryImg')}
+                                        className="w-full py-2 px-3 border border-neutral-400 focus:outline-none focus:border-blue-400 rounded-md"
+                                        type="file"
+
+                                        placeholder="Gallery Img"
+                                   />
+                                   {errors.propertyImg && <p className='text-sm text-red-400'>Property Image filed must be is required</p>}
+
                               </div>
 
                          </div>

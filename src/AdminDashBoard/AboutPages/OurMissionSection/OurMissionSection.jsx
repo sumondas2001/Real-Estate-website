@@ -101,7 +101,7 @@ const OurMissionSection = () => {
                          <div className="flex items-center justify-center">
                               <div className="lg:w-1/6 w-1/3">
                                    <label className="text-sm font-medium text-left block">
-                                        Upload Image size (645 x 385) <span className="text-red-600">*</span>
+                                        Upload Image <span className="text-red-600">*</span>
                                    </label>
                               </div>
                               <div className="lg:w-3/5 w-full">
@@ -114,6 +114,11 @@ const OurMissionSection = () => {
                                         />
 
                                         {errors.imgField && <p className="text-sm text-red-400">{errors.imgField.message}</p>}
+
+                                        <div className="mt-1">
+                                             <span className="text-sm ">image Must Be  size (645 x 385)</span>
+                                        </div>
+
                                    </div>
 
                               </div>

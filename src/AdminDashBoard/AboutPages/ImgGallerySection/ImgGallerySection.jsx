@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 
 const ImgGallerySection = () => {
 
+
      const { register,
           handleSubmit,
 
@@ -10,13 +11,13 @@ const ImgGallerySection = () => {
      const onSubmit = (data) => {
 
           console.log(data);
+
      }
      return (
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
                <h1 className="text-xl font-medium  text-center">Image Gallery Information</h1>
                <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
                     <form onSubmit={handleSubmit(onSubmit)} className="pb-10 pt-6 space-y-6">
-
                          {/* File Input Field */}
                          <div className="flex items-center justify-center">
                               <div className="lg:w-1/6 w-1/3">
@@ -28,10 +29,12 @@ const ImgGallerySection = () => {
                                    <div >
 
                                         <input type="file"
-                                             {...register("imgField")}
+                                             multiple
+                                             {...register("imgField", { required: 'Image Field Must be required' })}
                                              required
                                              className="file-input  file-input-accent  w-full max-w-xs"
                                         />
+                                        {errors.imgField && <p className="text-sm text-red-400">{errors.imgField.message}</p>}
 
 
                                    </div>
@@ -51,8 +54,6 @@ const ImgGallerySection = () => {
                          </div>
                     </form>
                </div>
-
-
           </div>
      );
 };

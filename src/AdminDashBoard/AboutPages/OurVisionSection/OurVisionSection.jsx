@@ -41,7 +41,7 @@ const OurVisionSection = () => {
      };
      return (
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
-               <h1 className="text-xl font-medium  text-center">Our Mission Information</h1>
+               <h1 className="text-xl font-medium  text-center">Our Vision Information</h1>
                <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
                     <form onSubmit={handleSubmit(onSubmit)} className="pb-10 pt-6 space-y-6">
                          {/* About Title Field */}
@@ -101,7 +101,7 @@ const OurVisionSection = () => {
                          <div className="flex items-center justify-center">
                               <div className="lg:w-1/6 w-1/3">
                                    <label className="text-sm font-medium text-left block">
-                                        Upload Image size (645 x 385) <span className="text-red-600">*</span>
+                                        Upload Image  <span className="text-red-600">*</span>
                                    </label>
                               </div>
                               <div className="lg:w-3/5 w-full">
@@ -114,6 +114,9 @@ const OurVisionSection = () => {
                                         />
 
                                         {errors.imgField && <p className="text-sm text-red-400">{errors.imgField.message}</p>}
+                                        <div className="mt-1">
+                                             <span className="text-sm ">image Must Be  size (645 x 385)</span>
+                                        </div>
                                    </div>
 
                               </div>
