@@ -341,17 +341,30 @@ const Sidebar = () => {
                     {/* Dropdown Links */}
                     {isBlogDropdownOpen && (
                          <ul className="ml-4 space-y-1 mt-1">
-                              {/* blog pages blogs section */}
+                              {/* blog pages all blogs section */}
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/blog-section"
+                                        to="/admin-dashBoard/all-blogs"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Blogs Section
+                                        All  Blogs
+                                   </NavLink>
+                              </li>
+                              {/* blog pages  add blogs section */}
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/Add-blog"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Add  Blog
                                    </NavLink>
                               </li>
                               {/* <li>

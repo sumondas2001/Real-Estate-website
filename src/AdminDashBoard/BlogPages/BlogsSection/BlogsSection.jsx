@@ -41,7 +41,7 @@ const BlogsSection = () => {
      };
      return (
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
-               <h1 className="text-xl font-medium  text-center">Blogs Section Information</h1>
+               <h1 className="text-xl font-medium  text-center">Add Blogs Section Information</h1>
                <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
                     <form onSubmit={handleSubmit(onSubmit)} className="pb-10 pt-6 space-y-6">
                          {/* About Title Field */}
@@ -57,7 +57,7 @@ const BlogsSection = () => {
                                         type="text"
 
                                         {...register('title', { required: true })}
-                                        placeholder="Our Mission Title"
+                                        placeholder="Our Blog Title"
                                    />
                                    {
                                         errors.title && <p className='text-sm font-extralight text-red-400'>title field is must be required</p>

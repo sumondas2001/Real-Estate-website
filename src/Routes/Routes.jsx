@@ -42,6 +42,7 @@ import AllSliderSection from "../AdminDashBoard/HomePage/SliderSection/AllSlider
 import AddSliderSection from "../AdminDashBoard/HomePage/SliderSection/AddSliderSection/AddSliderSection";
 import AddImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/AddImgGallerySection/AddImgGallerySection";
 import AllPropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AllPropertySection/AllPropertySection";
+import AllBlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/AllBlogsSection/AllBlogsSection";
 
 const router = createBrowserRouter([
      {
@@ -205,7 +206,11 @@ const router = createBrowserRouter([
                     element: <BlogHeroSection />
                },
                {
-                    path: 'blog-section',
+                    path: 'all-blogs',
+                    element: <AllBlogsSection />
+               },
+               {
+                    path: 'add-blog',
                     element: <BlogsSection />
                },
 

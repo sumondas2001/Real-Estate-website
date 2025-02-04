@@ -3,44 +3,41 @@ import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const AllPropertySection = () => {
-     const [properties, setProperties] = useState([]);
-
+const AllBlogsSection = () => {
+     const [blogs, setBlogs] = useState([]);
      // total property 
-     const [totalProperty, setTotalProperty] = useState(0);
+     const [totalBlog, setTotalBlog] = useState(0);
 
      const [currentPages, setCurrentPages] = useState(0);
 
      // property par pages show
      const [itemsPerPages, setItemsPerPages] = useState(10);
 
-     const numberOfPerPages = Math.ceil(totalProperty / itemsPerPages)
+     const numberOfPerPages = Math.ceil(totalBlog / itemsPerPages);
 
-     const pages = [...Array(numberOfPerPages).keys()]
+     const pages = [...Array(numberOfPerPages).keys()];
 
-     console.log(pages);
+     // console.log(pages);
 
      useEffect(() => {
-          axios.get('/allProperty.json')
+          axios.get('/Blogs.json')
                .then(res => {
-                    setProperties(res.data);
+                    setBlogs(res.data);
                })
                .catch(error => {
                     console.log(error);
                })
      }, [])
      useEffect(() => {
-          axios.get('/allProperty.json')
+          axios.get('/Blogs.json')
                .then(res => {
 
-                    setTotalProperty(res.data.length)
+                    setTotalBlog(res.data.length)
                })
                .catch(error => {
                     console.log(error);
                })
      }, []);
-
-
      // useEffect(() => {
      //      axios.get('/allProperty.json?item=${currentPages},size=${itemsPerPages}')
      //           .then(res => {
@@ -75,10 +72,10 @@ const AllPropertySection = () => {
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
                {/* Add Property Button */}
                <div className="flex justify-between items-center mb-6">
-                    <h1 className="text-2xl font-bold text-gray-800">All Property Information</h1>
-                    <Link to={'/admin-dashBoard/add-property-section'}>
+                    <h1 className="text-2xl font-bold text-gray-800">All Blogs Information</h1>
+                    <Link to={'/admin-dashBoard/add-blog'}>
                          <button className="py-2 px-6 bg-blue-600 text-white font-medium rounded-md shadow-md hover:bg-blue-700 focus:outline-none">
-                              ADD PROPERTY
+                              ADD BLOG
                          </button>
                     </Link>
                </div>
@@ -103,11 +100,9 @@ const AllPropertySection = () => {
                          <thead className="bg-gray-100">
                               <tr>
                                    <th className="py-3 px-4 text-left border-b">#</th>
-                                   <th className="py-3 px-4 text-left border-b">Property Image</th>
-                                   <th className="py-3 px-4 text-left border-b">Property Name</th>
-                                   <th className="py-3 px-4 text-left border-b">Property Location</th>
-                                   <th className="py-3 px-4 text-left border-b">Types</th>
-                                   <th className="py-3 px-4 text-left border-b">Title</th>
+                                   <th className="py-3 px-4 text-left border-b">Blog Img</th>
+                                   <th className="py-3 px-4 text-left border-b">Blog Title</th>
+
                                    <th className="py-3 px-4 text-center border-b">Options</th>
                               </tr>
                          </thead>
@@ -115,24 +110,16 @@ const AllPropertySection = () => {
                          <tbody>
                               {
 
-                                   properties.map((property, index) => (
+                                   blogs.map((property, index) => (
                                         <tr key={property.id} className="text-sm">
                                              <td className="py-2 px-4 border-b">{index + 1}</td>
                                              <td className="py-2 px-4 border-b">
-                                                  <img className="w-16 h-16  object-cover" src={property.img} alt="" />
+                                                  <img className="w-16 h-16  object-cover" src={property.blogImg} alt="" />
                                              </td>
                                              <td className="py-2 px-4 border-b font-medium">
-                                                  {property.propertyname}
+                                                  {property.blogTitle}
                                              </td>
-                                             <td className="py-2 px-4 border-b">
-                                                  {property.location}
-                                             </td>
-                                             <td className="py-2 px-4 border-b font-medium">
-                                                  {property.types}
-                                             </td>
-                                             <td className="py-2 px-4 border-b">
-                                                  {property.title}
-                                             </td>
+
 
                                              <td>
                                                   <div className="flex items-center justify-center gap-3">
@@ -190,4 +177,8 @@ const AllPropertySection = () => {
      );
 };
 
-export default AllPropertySection;
+// Placeholder delete handler (replace with real logic)
+
+
+
+export default AllBlogsSection;
