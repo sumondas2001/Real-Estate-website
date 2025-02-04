@@ -1,9 +1,6 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
 
-const ImgGallerySection = () => {
-
-
+const AddImgGallerySection = () => {
      const { register,
           handleSubmit,
 
@@ -12,17 +9,10 @@ const ImgGallerySection = () => {
      const onSubmit = (data) => {
 
           console.log(data);
-
      }
      return (
           <div className="2xl:max-w-screen-2xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm max-w-[360px] mx-auto py-4">
-
-               <div className="text-end">
-                    <Link to={'/admin-dashBoard/about-add-imgGallery'}>
-                         <button className="py-2 px-10 bg-blue-600 text-white font-medium rounded-md shadow-md focus:outline-none"> ADD IMAGE</button>
-                    </Link>
-               </div>
-               <h1 className="text-xl font-medium  text-center">All Image Gallery Information</h1>
+               <h1 className="text-xl font-medium  text-center">Add Image Gallery Information</h1>
                <div className="bg-white border border-slate-200 rounded-lg shadow-lg">
                     <form onSubmit={handleSubmit(onSubmit)} className="pb-10 pt-6 space-y-6">
                          {/* File Input Field */}
@@ -65,4 +55,5 @@ const ImgGallerySection = () => {
      );
 };
 
-export default ImgGallerySection;
+
+export default AddImgGallerySection;

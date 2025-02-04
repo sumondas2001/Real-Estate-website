@@ -16,7 +16,6 @@ import BlogDetails from "../Shared/BlogDetails/BlogDetails";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
 import Login from "../Pages/Login/Login";
 import AdminDashBoard from "../AdminDashBoard/AdminDashBoard";
-import SliderSection from "../AdminDashBoard/HomePage/SliderSection/SliderSection";
 import AboutSection from "../AdminDashBoard/HomePage/AboutSection/AboutSection";
 import PortfolioFirst from "../AdminDashBoard/HomePage/PortfolioSection/PortfolioFirst";
 import PortfolioSecond from "../AdminDashBoard/HomePage/PortfolioSection/PortfolioSecond ";
@@ -27,7 +26,7 @@ import OurMissionSection from "../AdminDashBoard/AboutPages/OurMissionSection/Ou
 import OurVisionSection from "../AdminDashBoard/AboutPages/OurVisionSection/OurVisionSection";
 import ImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/ImgGallerySection";
 import PropertyHeroSection from "../AdminDashBoard/PropertyPages/PropertyHeroSection/PropertyHeroSection";
-import PropertySection from "../AdminDashBoard/PropertyPages/PropertySection/PropertySection";
+import PropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AddPropertySection";
 import BlogHeroSection from "../AdminDashBoard/BlogPages/BlogHeroSection/BlogHeroSection";
 import BlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/BlogsSection";
 import CareerHeroSection from "../AdminDashBoard/CareerPages/CareerHeroSection/CareerHeroSection";
@@ -39,6 +38,10 @@ import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
 import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
 import VideoSection from "../AdminDashBoard/HomePage/VideoSection/VideoSection";
 import CareerAbout from "../AdminDashBoard/CareerPages/CareerAbout/CareerAbout";
+import AllSliderSection from "../AdminDashBoard/HomePage/SliderSection/AllSliderSection";
+import AddSliderSection from "../AdminDashBoard/HomePage/SliderSection/AddSliderSection/AddSliderSection";
+import AddImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/AddImgGallerySection/AddImgGallerySection";
+import AllPropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AllPropertySection/AllPropertySection";
 
 const router = createBrowserRouter([
      {
@@ -123,8 +126,12 @@ const router = createBrowserRouter([
                },
                // Home pages all section
                {
-                    path: 'home-slider',
-                    element: <SliderSection />
+                    path: 'home-all-slider',
+                    element: <AllSliderSection />
+               },
+               {
+                    path: 'home-add-slider',
+                    element: <AddSliderSection />
                },
                {
                     path: 'home-about',
@@ -168,7 +175,11 @@ const router = createBrowserRouter([
                     element: <OurVisionSection />
                },
                {
-                    path: 'about-imgGallery',
+                    path: 'about-add-imgGallery',
+                    element: <AddImgGallerySection />
+               },
+               {
+                    path: 'about-all-imgGallery',
                     element: <ImgGallerySection />
                },
                // Property pages all section
@@ -177,7 +188,11 @@ const router = createBrowserRouter([
                     element: <PropertyHeroSection />
                },
                {
-                    path: 'property-section',
+                    path: 'all-property-section',
+                    element: <AllPropertySection />
+               },
+               {
+                    path: 'add-property-section',
                     element: <PropertySection />
                },
                // {

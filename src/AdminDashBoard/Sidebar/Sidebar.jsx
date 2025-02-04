@@ -62,17 +62,30 @@ const Sidebar = () => {
                     {/* Dropdown Links */}
                     {isHomeDropdownOpen && (
                          <ul className="ml-4  space-y-1 mt-1">
-                              {/* home pages slider section */}
+                              {/* home pages all slider section */}
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/home-slider"
+                                        to="/admin-dashBoard/home-all-slider"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Slider
+                                        All Slider
+                                   </NavLink>
+                              </li>
+                              {/* home pages add slider section */}
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/home-add-slider"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Add Slider
                                    </NavLink>
                               </li>
                               {/* home pages about section */}
@@ -216,17 +229,30 @@ const Sidebar = () => {
                                         Our Vision
                                    </NavLink>
                               </li>
-                              {/* About pages img gallery section */}
+                              {/* About pages all img gallery section */}
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/about-imgGallery"
+                                        to="/admin-dashBoard/about-all-imgGallery"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Gallery Img
+                                        All  Gallery Img
+                                   </NavLink>
+                              </li>
+                              {/* About pages add img gallery section */}
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/about-add-imgGallery"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Add  Gallery Img
                                    </NavLink>
                               </li>
                          </ul>
@@ -252,17 +278,30 @@ const Sidebar = () => {
                     {/* Dropdown Links */}
                     {isPropertyDropdownOpen && (
                          <ul className="ml-4 space-y-1 mt-1">
-                              {/* property pages property section */}
+                              {/* property pages ALL property section */}
                               <li>
                                    <NavLink
-                                        to="/admin-dashBoard/property-section"
+                                        to="/admin-dashBoard/all-property-section"
                                         end
                                         className={({ isActive, isPending }) =>
                                              `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
                                              }`
                                         }
                                    >
-                                        Property Section
+                                        All  Property Section
+                                   </NavLink>
+                              </li>
+                              {/* property pages ADD property section */}
+                              <li>
+                                   <NavLink
+                                        to="/admin-dashBoard/add-property-section"
+                                        end
+                                        className={({ isActive, isPending }) =>
+                                             `block hover:bg-slate-900 px-4 py-2 ${isPending ? "pending" : isActive ? "bg-slate-900 " : ""
+                                             }`
+                                        }
+                                   >
+                                        Add  Property Section
                                    </NavLink>
                               </li>
                               {/* <li>

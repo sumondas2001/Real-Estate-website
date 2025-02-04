@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-const PropertySection = () => {
+const AddPropertySection = () => {
      const {
           handleSubmit,
           register,
@@ -64,12 +64,11 @@ const PropertySection = () => {
                                    <label className="text-sm font-medium block mb-1">
                                         Types <span className="text-red-600">*</span>
                                    </label>
-                                   <input
-                                        {...register('types', { required: true })}
-                                        className="w-full py-2 px-3 border border-neutral-400 focus:outline-none focus:border-blue-400 rounded-md"
-                                        type="text"
-                                        placeholder="Types"
-                                   />
+                                   <select className="w-full py-2 text-sm  px-3 border border-neutral-400 focus:outline-none focus:border-blue-400 rounded-md"  {...register('types', { required: true })}>
+                                        <option value=""> Select Types</option>
+                                        <option value="Completed"> Completed</option>
+                                        <option value="Up Coming"> Up Coming</option>
+                                   </select>
                                    {errors.types && <p className='text-sm text-red-400'>Types is required</p>}
                               </div>
 
@@ -271,4 +270,4 @@ const PropertySection = () => {
      );
 };
 
-export default PropertySection;
+export default AddPropertySection;

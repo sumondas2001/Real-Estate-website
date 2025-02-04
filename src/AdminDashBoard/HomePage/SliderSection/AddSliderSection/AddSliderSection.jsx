@@ -1,10 +1,9 @@
 import { useReducer, useRef } from "react";
-import { CiCirclePlus, CiTrash } from "react-icons/ci";
+import { CiTrash } from "react-icons/ci";
 
 const sliderReducer = (state, action) => {
      switch (action.type) {
-          case "ADD":
-               return [...state, { title: "", imgURL: "" }];
+
           case "REMOVE":
                return state.filter((_, index) => index !== action.index);
           case "REMOVE_IMAGE":
@@ -24,7 +23,7 @@ const sliderReducer = (state, action) => {
      }
 };
 
-const SliderSection = () => {
+const AddSliderSection = () => {
      const [sliders, dispatch] = useReducer(sliderReducer, [{ title: "", imgURL: "" }]);
      const fileInputRefs = useRef([]);
 
@@ -126,27 +125,17 @@ const SliderSection = () => {
                               </div>
                          ))}
 
-                         {/*  Add New Slider Button */}
-                         <div className="flex justify-center">
-                              <button
-                                   type="button"
-                                   onClick={() => dispatch({ type: "ADD" })}
-                                   className="flex items-center gap-2 border-2 px-6 py-2 text-lg"
-                              >
-                                   <CiCirclePlus className="text-green-500 text-2xl" />
-                                   ADD NEW
-                              </button>
-                         </div>
+
 
                          {/*  Save Button (Disabled If Any Image is Missing) */}
-                         <div className="flex justify-center mt-4">
+                         <div className="flex justify-end mt-4">
                               <button
                                    type="button"
                                    onClick={handleSave}
                                    disabled={isSaveDisabled}
                                    className={`px-6 py-2 rounded-lg shadow-md ${isSaveDisabled
-                                        ? "bg-green-500 text-white hover:bg-green-600 cursor-not-allowed"
-                                        : "bg-green-500 text-white hover:bg-green-600"
+                                        ? "py-2 px-10 bg-blue-600 text-white font-medium rounded-md shadow-md focus:outline-none cursor-not-allowed"
+                                        : "py-2 px-10 bg-blue-600 text-white font-medium rounded-md shadow-md focus:outline-none"
                                         }`}
                               >
                                    Save
@@ -158,4 +147,4 @@ const SliderSection = () => {
      );
 };
 
-export default SliderSection;
+export default AddSliderSection;
