@@ -136,10 +136,10 @@ const AllPropertySection = () => {
 
                                              <td>
                                                   <div className="flex items-center justify-center gap-3">
-                                                       <Link to={`/admin-dashBoard/property/${property.id}`}>
+                                                       <Link to={`/admin-dashBoard/property-edit/${property.id}`}>
                                                             <FaEye className="text-blue-500 hover:text-blue-700 cursor-pointer" title="View" />
                                                        </Link>
-                                                       <Link to={`/admin-dashBoard/property/${property.id}`}>
+                                                       <Link to={`/admin-dashBoard/property-edit/${property.id}`}>
                                                             <FaEdit className="text-green-500 hover:text-green-700 cursor-pointer" title="Edit" />
                                                        </Link>
                                                        <Link to={`/admin-dashBoard/property/${property.id}`}>

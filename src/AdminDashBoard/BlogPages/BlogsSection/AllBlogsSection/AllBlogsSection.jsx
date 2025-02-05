@@ -110,26 +110,26 @@ const AllBlogsSection = () => {
                          <tbody>
                               {
 
-                                   blogs.map((property, index) => (
-                                        <tr key={property.id} className="text-sm">
+                                   blogs.map((blog, index) => (
+                                        <tr key={blog.id} className="text-sm">
                                              <td className="py-2 px-4 border-b">{index + 1}</td>
                                              <td className="py-2 px-4 border-b">
-                                                  <img className="w-16 h-16  object-cover" src={property.blogImg} alt="" />
+                                                  <img className="w-16 h-16  object-cover" src={blog.blogImg} alt="" />
                                              </td>
                                              <td className="py-2 px-4 border-b font-medium">
-                                                  {property.blogTitle}
+                                                  {blog.blogTitle}
                                              </td>
 
 
                                              <td>
                                                   <div className="flex items-center justify-center gap-3">
-                                                       <Link to={`/admin-dashBoard/property/${property.id}`}>
+                                                       <Link to={`/blog`}>
                                                             <FaEye className="text-blue-500 hover:text-blue-700 cursor-pointer" title="View" />
                                                        </Link>
-                                                       <Link to={`/admin-dashBoard/property/${property.id}`}>
+                                                       <Link to={`/admin-dashBoard/blog-edit/${blog.id}`}>
                                                             <FaEdit className="text-green-500 hover:text-green-700 cursor-pointer" title="Edit" />
                                                        </Link>
-                                                       <Link to={`/admin-dashBoard/property/${property.id}`}>
+                                                       <Link to={`/admin-dashBoard/blog/${blog.id}`}>
                                                             <FaTrash className="text-red-500 hover:text-red-700 cursor-pointer" title="Delete" />
                                                        </Link>
                                                   </div>

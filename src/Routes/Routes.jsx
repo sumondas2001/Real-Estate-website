@@ -26,14 +26,12 @@ import OurMissionSection from "../AdminDashBoard/AboutPages/OurMissionSection/Ou
 import OurVisionSection from "../AdminDashBoard/AboutPages/OurVisionSection/OurVisionSection";
 import ImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/ImgGallerySection";
 import PropertyHeroSection from "../AdminDashBoard/PropertyPages/PropertyHeroSection/PropertyHeroSection";
-import PropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AddPropertySection";
 import BlogHeroSection from "../AdminDashBoard/BlogPages/BlogHeroSection/BlogHeroSection";
 import BlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/BlogsSection";
 import CareerHeroSection from "../AdminDashBoard/CareerPages/CareerHeroSection/CareerHeroSection";
 // import CareerDepartmentsSection from "../AdminDashBoard/CareerPages/CareerDepartmentsSection/CareerDepartmentsSection";
 import AddressSection from "../AdminDashBoard/contactUsPages/AddressSection/AddressSection";
 import ContactUsHeroSection from "../AdminDashBoard/contactUsPages/contactUsHeroSection/contactUsHeroSection";
-// import PropertyDetailsHeroSection from "../AdminDashBoard/PropertyPages/PropertyDetailsHeroSection/PropertyDetailsHeroSection";
 import DashBoard from "../AdminDashBoard/DashBoard/DashBoard";
 import BannerSection from "../AdminDashBoard/HomePage/BannerSection/BannerSection";
 import VideoSection from "../AdminDashBoard/HomePage/VideoSection/VideoSection";
@@ -43,6 +41,9 @@ import AddSliderSection from "../AdminDashBoard/HomePage/SliderSection/AddSlider
 import AddImgGallerySection from "../AdminDashBoard/AboutPages/ImgGallerySection/AddImgGallerySection/AddImgGallerySection";
 import AllPropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AllPropertySection/AllPropertySection";
 import AllBlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/AllBlogsSection/AllBlogsSection";
+import EditBlog from "../AdminDashBoard/BlogPages/EditBlog/EditBlog";
+import AddPropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AddPropertySection";
+import PropertyEdit from "../AdminDashBoard/PropertyPages/PropertyEdit/PropertyEdit";
 
 const router = createBrowserRouter([
      {
@@ -194,12 +195,12 @@ const router = createBrowserRouter([
                },
                {
                     path: 'add-property-section',
-                    element: <PropertySection />
+                    element: <AddPropertySection />
                },
-               // {
-               //      path: 'property-details-hero',
-               //      element: <PropertyDetailsHeroSection />
-               // },
+               {
+                    path: 'property-edit/:id',
+                    element: <PropertyEdit />
+               },
                // Blog pages all section
                {
                     path: 'blog-hero',
@@ -212,6 +213,10 @@ const router = createBrowserRouter([
                {
                     path: 'add-blog',
                     element: <BlogsSection />
+               },
+               {
+                    path: 'blog-edit/:id',
+                    element: <EditBlog />
                },
 
                // career pages all section

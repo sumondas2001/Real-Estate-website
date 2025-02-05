@@ -3,6 +3,8 @@ import { CiTrash } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 const sliderReducer = (state, action) => {
+
+
      switch (action.type) {
 
           case "REMOVE":
