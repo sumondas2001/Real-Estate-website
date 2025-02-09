@@ -7,7 +7,9 @@ import "aos/dist/aos.css";
 
 import { Toaster } from "react-hot-toast";
 import AOS from 'aos';
+
 const Main = () => {
+
      const pathname = useLocation();
 
 
@@ -19,23 +21,9 @@ const Main = () => {
           window.scrollTo(0, 0);
      }, [pathname.pathname]);
 
-     // useEffect(() => {
-     //      const lenis = new Lenis({
-     //           duration: 0,
-     //           easing: (t) => t,
-     //           smooth: true,
-     //           direction: 'vertical',
-     //      })
 
-     //      function raf(time) {
-     //           lenis.raf(time)
-     //           requestAnimationFrame(raf)
-     //      }
 
-     //      requestAnimationFrame(raf)
 
-     //      return () => lenis.destroy()
-     // }, [])
      return (
           <div className="font-Playfair bg-black">
                <Navbar></Navbar>

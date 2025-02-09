@@ -44,6 +44,8 @@ import AllBlogsSection from "../AdminDashBoard/BlogPages/BlogsSection/AllBlogsSe
 import EditBlog from "../AdminDashBoard/BlogPages/EditBlog/EditBlog";
 import AddPropertySection from "../AdminDashBoard/PropertyPages/PropertySection/AddPropertySection";
 import PropertyEdit from "../AdminDashBoard/PropertyPages/PropertyEdit/PropertyEdit";
+import PrivetRoute from "../ProviteRoute/PrivetRoute";
+
 
 const router = createBrowserRouter([
      {
@@ -120,11 +122,15 @@ const router = createBrowserRouter([
      // Admin panel start
      {
           path: '/admin-dashBoard',
-          element: <AdminDashBoard />,
+          element: <PrivetRoute>
+               <AdminDashBoard />
+          </PrivetRoute>
+          ,
           children: [
                {
                     path: '/admin-dashBoard',
                     element: <DashBoard />
+
                },
                // Home pages all section
                {

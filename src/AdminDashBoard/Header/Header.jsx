@@ -5,12 +5,16 @@ import { BiWorld } from "react-icons/bi";
 import { useContext } from "react";
 import { ToggleSideBarContext } from "../ToggleProvider/ToggleProvider";
 import { TfiClose, TfiAlignJustify } from "react-icons/tfi";
+import { AuthContext } from "../../AuthContext/AuthProvider";
 
 const Header = () => {
      const { handelToggleSidebar, isOpen } = useContext(ToggleSideBarContext);
 
+     // context provider logout 
+     const { logout } = useContext(AuthContext);
+
      const handelLogOut = () => {
-          console.log("log Out");
+          logout()
      };
 
      return (

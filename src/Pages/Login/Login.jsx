@@ -1,14 +1,39 @@
 
+import { useContext } from "react";
+import { AuthContext } from "../../AuthContext/AuthProvider";
+import axiosInstance from "../../Axios";
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
 
+     const { login, setLoading, logout } = useContext(AuthContext);
+     const navigate = useNavigate()
 
      const handelAdminLogin = (event) => {
           event.preventDefault();
           const from = event.target;
           const email = from.email.value;
           const password = from.password.value;
-          console.log(email, password);
-     }
+
+          axiosInstance.post('/auth/login', {
+               email: email,
+               password: password
+          })
+               .then(res => {
+                    login(res.data.data.user, res.data.data.token);
+                    navigate('/admin-dashBoard');
+
+               })
+               .catch(error => {
+                    console.log(error);
+                    logout();
+                    setLoading(false)
+
+               })
+     };
+
+
+
      return (
           <div className="flex lg:flex-row flex-col   lg:items-center lg:gap-20 gap-10">
                <div className="lg:w-1/2">

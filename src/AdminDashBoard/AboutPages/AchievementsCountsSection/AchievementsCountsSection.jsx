@@ -4,7 +4,6 @@ const AchievementsCountsSection = () => {
      const {
           handleSubmit,
           register,
-
           formState: { errors, isSubmitting },
 
      } = useForm();
