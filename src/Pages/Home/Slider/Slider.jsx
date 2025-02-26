@@ -15,6 +15,7 @@ const Slider = () => {
      const [slidersData, setSlidersData] = useState([]);
 
 
+
      useEffect(() => {
           axios.get('/slider.json')
                .then(res => {
@@ -29,10 +30,11 @@ const Slider = () => {
      }, [])
 
      return (
-          <>
+          <div>
                <Swiper
                     spaceBetween={3}
                     centeredSlides={true}
+
                     speed={3000}
                     loop={true}
                     autoplay={{
@@ -85,7 +87,10 @@ const Slider = () => {
                          <BsArrowRight className='font-thin lg:text-4xl md:text-3xl text-3xl' />
                     </div>
                </Swiper>
-          </>
+
+
+
+          </div>
      );
 };
 

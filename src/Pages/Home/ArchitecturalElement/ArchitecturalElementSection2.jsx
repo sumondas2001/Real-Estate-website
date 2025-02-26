@@ -20,7 +20,7 @@ const ArchitecturalElementSection2 = () => {
                          <hr className='w-20 md:hidden hidden lg:block  border-[1px] border-primaryColor' />
                          <h1 className="lg:text-4xl md:text-3xl text-2xl font-normal mb-6 text-primaryColor">Ambiance Of Urban Excellence</h1>
                     </div>
-                    <p className="lg:text-base md:text-base text-sm lg:pl-[70px]  text-white  font-normal">Our luxurious properties have always been developed with a meticulous and calculated consideration for the location and environmental traits of a given project.</p>
+                    <p className="lg:text-base md:text-base text-sm lg:pl-[70px] text-justify text-white  font-normal">Our luxurious properties have always been developed with a meticulous and calculated consideration for the location and environmental traits of a given project.</p>
                </div>
           </div>
      );

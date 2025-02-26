@@ -17,7 +17,7 @@ const AboutUs = () => {
 
                          className="lg:w-1/2 md:w-full w-full space-y-10">
                          <h1 className="lg:text-5xl md:text-3xl text-2xl lg:text-start text-center font-medium text-primaryColor">A Legacy Written in Concrete</h1>
-                         <p className="text-base text-justify lg:text-start font-normal text-white">
+                         <p className="text-base text-justify lg:text-justify font-normal text-white">
                               {
                                    description.slice(0, 970)
                               }

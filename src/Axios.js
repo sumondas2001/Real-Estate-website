@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 const token = localStorage.getItem('token')
 const axiosInstance = axios.create({
-     baseURL: 'http://team-sync.driosoft.com/api',
+     baseURL: 'https://team-sync.driosoft.com/api',
      headers: {
           Authorization: token ? `Bearer ${token}` : {}
      }
@@ -19,7 +19,7 @@ axiosInstance.interceptors.response.use(
           }
           else if (error.response.status === 403) {
                toast.error('Unauthorized Access');
-               window.location.href = "/login"
+               window.location.href = "/login";
           }
           return Promise.reject(error);
      }

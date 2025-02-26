@@ -7,7 +7,7 @@ const AllProjects = () => {
      useEffect(() => {
           axios.get('/allProperty.json')
                .then(res => {
-                    console.log(res.data);
+                    // console.log(res.data);
                     setAllProperties(res.data)
                })
                .catch(error => {

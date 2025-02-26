@@ -75,17 +75,17 @@ const PropertyDetailsCard = () => {
                          </div>
                          <div className="flex  lg:gap-28 md:gap-16 gap-6 ">
 
-                              <div className="space-y-4">
+                              <div className="lg:space-y-8 space-y-4 text-primaryColor">
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <IoLocation className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-xs">Location </h5>
                                              <p className="lg:text-lg text-white  md:text-lg text-base font-semibold"> {allProperties?.location} </p>
                                         </div>
                                    </div>
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <BsTextareaResize className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">land Area </h5>
 
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.landArea}</p>
@@ -94,21 +94,21 @@ const PropertyDetailsCard = () => {
 
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <BsFillBuildingsFill className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Type </h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.title}</p>
                                         </div>
                                    </div>
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <SlSizeFullscreen className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Size </h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.landArea}</p>
                                         </div>
                                    </div>
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <FaRoad className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Front Road </h5>
 
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.frontRoad}</p>
@@ -116,38 +116,38 @@ const PropertyDetailsCard = () => {
                                    </div>
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         < AiOutlineBorderOuter className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Orientation </h5>
 
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.orientation}</p>
                                         </div>
                                    </div >
                               </div>
-                              <div className="space-y-4">
+                              <div className="lg:space-y-8 space-y-4 text-primaryColor">
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         < IoCarSportSharp className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Car Parking </h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold"> {allProperties?.numberOfParking}</p>
                                         </div>
                                    </div >
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <GiElevator className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Elevator </h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.numberOfElevator}</p>
                                         </div >
                                    </div >
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <GiHouseKeys className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Hand Over Date  </h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">{allProperties?.handoverDate}</p>
                                         </div >
                                    </div >
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <PiBuildingApartmentDuotone className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1" >
+                                        <div className="" >
                                              <h5 className="font-extralight text-sm">Residential Floors </h5>
 
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold"> {allProperties?.residentialFloors}</p>
@@ -156,14 +156,14 @@ const PropertyDetailsCard = () => {
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
 
                                         <VscLayoutPanelCenter className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1">
+                                        <div className="">
                                              <h5 className="font-extralight text-sm">Apartment Size A</h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold">  {allProperties?.apartmentSize?.A}</p>
                                         </div >
                                    </div >
                                    <div className="flex items-center lg:gap-7 md:gap-6 gap-4 ">
                                         <VscLayoutPanelCenter className="lg:size-8 md:size-7 size-5 text-primaryColor" />
-                                        <div className="space-y-1" >
+                                        <div className="" >
                                              <h5 className="font-extralight text-sm">Apartment Size B </h5>
                                              <p className="lg:text-lg text-white md:text-lg text-base font-semibold"> {allProperties?.apartmentSize?.B}</p>
                                         </div >

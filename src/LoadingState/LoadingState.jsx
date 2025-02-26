@@ -1,10 +1,11 @@
+import { SquareLoader } from "react-spinners";
 
 const LoadingState = () => {
      return (
-          <div className="flex items-center  justify-center">
-               <span className="loading loading-ring loading-lg"></span>
-
+          <div className="flex items-center justify-center h-screen">
+               <SquareLoader color="#edea42" size={70} />
           </div>
+
      );
 };
 

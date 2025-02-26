@@ -57,7 +57,7 @@ const BlogDetails = () => {
                          data-aos-duration="2000"
                          data-aos-easing="ease-out-cubic"
 
-                         className="text-lg font-light text-white leading-8">{blogDescription}</p>
+                         className="text-lg font-light text-white text-justify leading-8">{blogDescription}</p>
                </div>
           </div>
      );
