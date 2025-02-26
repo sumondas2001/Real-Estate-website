@@ -2,6 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 const token = localStorage.getItem('token')
 const axiosInstance = axios.create({
+     // test url 
      baseURL: 'https://team-sync.driosoft.com/api',
      headers: {
           Authorization: token ? `Bearer ${token}` : {}
